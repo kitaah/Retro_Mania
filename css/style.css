@@ -1,0 +1,2525 @@
+html,
+body,
+span,
+iframe,
+h1,
+h2,
+h3,
+p,
+pre,
+a,
+address,
+img,
+ul,
+li,
+form,
+label,
+table,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+footer,
+header,
+hgroup,
+nav,
+section {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 62.5%;
+    font: inherit;
+}
+
+* {
+    box-sizing: border-box;
+    cursor: url("../medias/cursors/retrowave.cur"), default;
+}
+
+body {
+    color: #ffffff;
+    background: linear-gradient(#000000, #800080) no-repeat fixed;
+    font-family: 'Roboto_regular', Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    outline: none;
+    color: #ffffff;
+}
+
+a:hover {
+    transition: 0.2s ease-in;
+}
+
+ul {
+    list-style: none;
+}
+
+@font-face {
+    font-family: 'Roboto_regular';
+    src: url('../medias/fonts/roboto_regular/roboto_regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Eighties_free';
+    src: url('../medias/fonts/eighties_free/eighties_free.ttf') format('truetype'),
+        url('../medias/fonts/eighties_free/eighties_free.otf') format('otf');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+.h1-model {
+    font-family: 'Eighties_Free', 'Times New Roman', Arial, Helvetica, sans-serif;
+    font-size: 3.5rem;
+    letter-spacing: 0.12rem;
+    margin-bottom: 4rem;
+}
+
+.h1-model span {
+    border-bottom: 0.1rem solid #ffffff;
+    padding-bottom: 0.3rem;
+}
+
+.margin-auto {
+    margin: auto;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+}
+
+.blue-link {
+    color: #00ffff;
+}
+
+.line-break-before::before,
+.line-break-after::after {
+    content: "\a";
+    white-space: pre;
+}
+
+/* LAYOUTS : ADMIN LAYOUT / SECRET LAYOUT / SITE LAYOUT */
+/* HEADER */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    opacity: 0.90;
+}
+
+.header__website,
+.header__dashboard {
+    background: linear-gradient(#000000, #800080) no-repeat fixed;
+    border-bottom: 0.2rem solid transparent;
+    border-image: linear-gradient(to right, #0000ff, #ff0000);
+    border-image-slice: 30%;
+}
+
+/* -- ADMIN LAYOUT */
+.header__dashboard {
+    align-items: center;
+}
+
+.sun__img,
+.dashboard-logo__img {
+    vertical-align: middle;
+}
+
+.sun__img {
+    width: 5.5rem;
+}
+
+.dashboard-logo__img {
+    width: 38rem;
+}
+
+/* -- SITE LAYOUT */
+.header__menu-desktop,
+.header__menu-devices {
+    align-items: center;
+}
+
+.header__menu-desktop i {
+    color: #b913b9;
+    font-size: 1.5rem;
+}
+
+.header-list,
+.fa-gamepad {
+    margin: 0 2rem;
+}
+
+#header-logo-desktop__image {
+    width: 28rem;
+    margin: 0 2.5rem;
+}
+
+.menu__devices {
+    display: none;
+}
+
+.changing-header {
+    background: #000000;
+    transition: all 0.5s linear;
+    border-bottom: 0.2rem solid transparent;
+    border-image: linear-gradient(to right, #ff0000, orange, #ffff00, #008000, #0000ff, #4b0082, #ee82ee);
+    border-image-slice: 30%;
+}
+
+/* FOOTER */
+/* SITE LAYOUT */
+.footer__navs {
+    background-color: #6B1269;
+    text-align: left;
+    font-size: 1.1rem;
+    padding: 1rem 0 0.5rem 0;
+}
+
+.footer__nav li {
+    padding-bottom: 0.5rem;
+}
+
+.footer__nav h2 {
+    color: #ffc0cb;
+    padding-bottom: 1rem;
+}
+
+.footer__nav:nth-child(2) {
+    margin: 0 4rem 0 4rem;
+}
+
+footer .fa-brands {
+    font-size: 1.1rem;
+    margin-right: 0.5rem;
+}
+
+.footer__navs a:hover {
+    color: #00ffff;
+}
+
+/* VIEWS */
+/* ADMIN VIEWS */
+/* ADMIN HOME + ADMIN MENU PAGES */
+.admin-home__container,
+.admin-menu__container {
+    font-size: 1.4rem;
+}
+
+.admin-menu__container p {
+    font-size: 1.5rem;
+}
+
+.admin-home__navs,
+.admin-menu__navs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.admin-home__navs li,
+.admin-menu__navs li {
+    border: 0.1rem solid #ffc0cb;
+    padding: 2rem;
+    border-radius: 1rem;
+    width: 15rem;
+}
+
+.admin-home__navs li:first-child,
+.admin-menu__navs li:first-child {
+    background-color: #800080;
+}
+
+.admin-menu__navs li:first-child {
+    margin-top: 2rem;
+}
+
+.admin-home__navs li:nth-child(2),
+.admin-menu__navs li:nth-child(2) {
+    margin-top: 3rem;
+    background-color: #0e810e;
+}
+
+.admin-home__navs li:nth-child(3),
+.admin-menu__navs li:nth-child(3) {
+    margin-top: 3rem;
+    background-color: #10106d;
+}
+
+.admin-menu__navs li:last-child {
+    margin-top: 3rem;
+    background-color: #c20f2d;
+}
+
+.admin-home__navs i,
+.admin-menu__navs i {
+    margin-right: 0.5rem;
+}
+
+/* ADMIN REGISTRATION PAGE */
+.admin-register__form {
+    margin-bottom: 3rem;
+}
+
+/* ADMIN CAPS CATALOG PAGE */
+.admin-caps-catalog__table-actions {
+    display: flex;
+    flex-direction: column;
+}
+
+.admin-caps-catalog__table-actions i {
+    color: #b31630;
+    font-size: 1.5rem;
+    padding: 2.5rem 0;
+}
+
+.admin-caps-catalog__img {
+    width: 20rem;
+    border: 0.1rem solid #d3d3d3;
+}
+
+.admin-add-product__form {
+    margin: 5rem 0;
+}
+
+.upload__label {
+    border: 0.1rem solid lightpink;
+    padding: 0.5rem 0.5rem;
+    border-radius: 0.2rem;
+    background-color: #530053;
+    color: #ffffff;
+}
+
+/* ADMIN EDIT CAP PAGE */
+#admin-product-update__form-content {
+    background-size: cover;
+}
+
+.admin-product-update__form {
+    margin-bottom: 5rem;
+}
+
+/* ADMIN CAP DESCRIPTION PAGE */
+.admin-cap-description__content-details-quantity {
+    margin-top: 2.5rem;
+}
+
+#admin-product-update-img__form-content {
+    background-color: #700370;
+    padding: 3.5rem;
+}
+
+.admin-product-update-img__content {
+    margin-top: 6rem;
+}
+
+.upload__label-img {
+    align-items: center;
+    border: 0.1rem solid lightpink;
+    width: 15rem;
+    padding: 0.5rem;
+    border-radius: 0.2rem;
+    background-color: #530053;
+    color: #ffffff;
+}
+
+/* NAVIGATION BAR FOR MOST ADMIN PAGES ( ADMIN MENU / ADMIN COLLECTIONS LIST / ADMIN CAPS CATALOG/ ADMIN CAPS DESCRIPTION/ ADMIN WINNERS LIST */
+.admin__bottom-navs {
+    margin-top: 6rem;
+    align-items: center;
+}
+
+.admin__bottom-navs i {
+    color: #ff0000;
+    font-size: 2rem;
+    padding: 0 1rem;
+}
+
+.no-changing-page {
+    background-color: #f1f1f1;
+    color: #000000;
+}
+
+/* SITE VIEWS */
+/* HOME PAGE */
+.site-home__container {
+    animation: fadeIn 2s;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.site-home-top {
+    background-image: url("../medias/img/site/home/purple_mountain.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding: 5rem 0 30rem 0;
+}
+
+.site-home-top h1 {
+    color: #feb6ff;
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+}
+
+#site-home-top__link {
+    border: 0.15rem solid transparent;
+    background-color: transparent;
+    border-image: linear-gradient(to right, #800080, #ffc0cb);
+    border-image-slice: 1;
+    font-size: 1.7rem;
+    color: #ffc0cb;
+    padding: 0.5rem 0;
+    box-shadow: 0 0.38rem 0.38rem #000000cc;
+    width: 22rem;
+}
+
+#site-home-top__link:hover {
+    transform: scale(1.05);
+    transition: 0.5s ease-in;
+}
+
+/* ABOUT US PAGE */
+.about-us__container {
+    font-size: 1.2rem;
+    width: 80%;
+    line-height: 1.5rem;
+}
+
+.about-us__intro p:nth-child(3) {
+    margin-bottom: 3rem;
+}
+
+.about-us__presentation {
+    background: linear-gradient(#000000, #6c036c) no-repeat fixed;
+    text-align: left;
+    border: 0.1rem solid #FF3776;
+    padding: 1.2rem 1rem 4rem 1rem;
+    box-shadow: 0 0.4rem 0.4rem #000000cc;
+}
+
+#anthony-bardinter {
+    margin-top: 1rem;
+}
+
+#marta-hernandez {
+    margin: 1rem 0 1rem 0;
+}
+
+#anthony-bardinter,
+#marta-hernandez {
+    display: none;
+}
+
+.about-us__presentation h2 {
+    font-size: 1.4rem;
+    margin-bottom: 1.8rem;
+}
+
+.about-us__presentation h2 span {
+    font-style: italic;
+}
+
+.about-us__presentation p {
+    margin-bottom: 0.5rem;
+}
+
+#anthony-bardinter__img,
+#marta-hernandez__img {
+    border: 0.1rem solid #FF3776;
+    width: 22rem;
+}
+
+.about-us__end {
+    margin-top: 3rem;
+}
+
+.about-us__end img {
+    margin-top: 0.4rem;
+    width: 5rem;
+}
+
+.about-us__manufacturing-process {
+    padding-top: 2.5rem;
+}
+
+.about-us__manufacturing-process p {
+    margin-bottom: 0.5rem;
+}
+
+.about-us__manufacturing-process iframe {
+    border: 3rem solid transparent;
+    border-image: url("../medias/img/site/about_us/tv.png") stretch;
+    border-image-slice: 30%;
+    width: 36rem;
+    height: 22rem;
+}
+
+/* CAPS CATALOG PAGE */
+.caps-catalog__container,
+.caps-catalog__content {
+    flex-direction: column;
+    align-items: center;
+}
+
+.caps-catalog__content-details {
+    width: 27rem;
+}
+
+.caps-catalog__img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-top: 0.1rem solid #490c49;
+    border-left: 0.1rem solid #490c49;
+    border-right: 0.1rem solid #490c49;
+}
+
+.caps-catalog__img:hover {
+    filter: brightness(90%);
+}
+
+.caps-catalog__content-details hgroup {
+    background-image: url("../medias/img/caps_collections/sky.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 1.5rem;
+    font-family: 'Roboto_regular', 'Times New Roman', Arial, Helvetica, sans-serif;
+    border: 0.12rem solid #490c49;
+}
+
+.caps-catalog__content-details h2 {
+    padding: 1rem 0 0.25rem 0;
+}
+
+.caps-catalog__content-details h3 {
+    padding: 0.25rem 0 1rem 0;
+}
+
+.caps-catalog__content a {
+    background-color: #800080;
+    color: #ffffff;
+    font-size: 2rem;
+    border: 0.1rem solid #ffc0cb;
+    border-radius: 50%;
+    width: 4rem;
+    height: 4rem;
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 5rem;
+    box-shadow: 0 0.38rem 0.38rem #000000cc;
+}
+
+.caps-catalog__content a:hover {
+    border: 0.1rem solid #ffd700;
+}
+
+#akira-motorbike__img {
+    width: 7rem;
+}
+
+/* SITE VIEW : CAP DESCRIPTION PAGE */
+.cap-description__img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border: 0.2rem solid #7f1272;
+}
+
+.fa-heart {
+    cursor: url('../medias/cursors/hand.cur'), default;
+    margin-left: 0.5rem;
+}
+
+.made-in-US {
+    margin-top: 1rem;
+}
+
+.cap-description__content-details-product_id {
+    margin-top: 2rem;
+}
+
+.admin-cap-description__content-details-product_id {
+    line-height: 3rem;
+}
+
+.fa-cubes {
+    color: #ff0000;
+}
+
+.cap-description__content-navs {
+    display: flex;
+    margin-top: 2rem;
+}
+
+.cap-description__content-navs i {
+    background: #000000;
+    font-size: 1.4rem;
+    border: 0.1rem solid #800080;
+    padding: 0.5rem 1rem;
+}
+
+.cap-description__content-navs li:nth-child(2) {
+    margin: 0 0.6rem 0 0.6rem;
+}
+
+.cap-description__content-navs i:hover {
+    background-color: #800080;
+}
+
+#popup-message {
+    background-color: #650b65;
+    font-size: 1.6rem;
+    line-height: 3rem;
+    position: absolute;
+    left: 0%;
+    top: 50%;
+    border: none;
+    border-radius: 1rem;
+    width: 24rem;
+}
+
+#xmark-popup {
+    font-size: 1.3rem;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.cap-description__previous-page {
+    margin-top: 4rem;
+    width: 6rem;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* SITE VIEW : SEARCH GAME PAGE */
+.search-game__container {
+    font-size: 1.2rem;
+    width: 81%;
+}
+
+.search-game__explanations {
+    line-height: 1.7rem;
+}
+
+.search-game__search-bar {
+    align-items: center;
+    margin: 5rem 0 4.5rem 0;
+}
+
+.search-game__search-bar {
+    animation: fadeIn 5s;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.search-game__search-bar i {
+    font-size: 1.5rem;
+}
+
+#search-game-bar {
+    padding: 0.3rem;
+    border-radius: 4rem;
+    border: none;
+    margin: 0 1.2rem 0 1rem;
+}
+
+#search-game-text {
+    width: 0;
+    border: none;
+    background: transparent;
+    outline: none;
+    transition: 1s;
+}
+
+.fa-star-aside {
+    cursor: url("../medias/cursors/sword.cur"), default;
+}
+
+.active {
+    background: #ffffff;
+}
+
+.active #search-game-text {
+    font-size: 1rem;
+    width: 13rem;
+    padding: 0 1.25rem;
+}
+
+.search-game__submit {
+    color: #ffffff;
+    background: none;
+    border: none;
+}
+
+.fa-star-button {
+    color: #800080;
+}
+
+.stars-rotation {
+    animation: rotate-center 1s ease-in-out both;
+}
+
+@keyframes rotate-center {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#typing-text {
+    display: none;
+    font-size: 1.6rem;
+}
+
+#typing-text h3 {
+    font-style: italic;
+}
+
+.fa-keyboard {
+    margin: 0.5rem 0 2rem 0;
+}
+
+#forgot-searching-text {
+    display: none;
+}
+
+.sonic__img {
+    width: 35%;
+}
+
+#win-game-text,
+#loose-game-text {
+    display: none;
+}
+
+#win-game-text h3,
+#loose-game-text h3,
+#forgot-searching-text h3 {
+    margin-bottom: 1rem;
+}
+
+#forgot-searching-text h3,
+#win-game-text h3,
+#loose-game-text h3 {
+    font-size: 1.4rem;
+}
+
+.win-game-trophy {
+    margin-left: 0.5rem;
+}
+
+.win__img,
+.loose__img {
+    border: 0.1rem solid #ffc0cb;
+    width: 50rem;
+}
+
+/* CONTACT US PAGE */
+.contact-us__container {
+    font-size: 1.2rem;
+    line-height: 1.7rem;
+    width: 76%;
+}
+
+.contact-us__info {
+    margin-top: 1.9rem;
+}
+
+.contact-us__info address:nth-child(2) {
+    line-height: 2.2rem;
+}
+
+.contact-us__info i {
+    padding: 0 0.4rem 0 0;
+}
+
+.fa-phone {
+    color: #05c905;
+}
+
+.fa-location-dot {
+    color: #00ffff;
+}
+
+.fa-envelope {
+    color: #d6ba19;
+}
+
+.contact-us__google-maps {
+    padding: 3rem 0;
+}
+
+.contact-us__google-maps iframe {
+    width: 35rem;
+    height: 26rem;
+}
+
+.contact-us__store-hours {
+    background-image: url("../medias/img/site/contact_us/purple_geometric.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 16.2rem;
+    line-height: 1.5rem;
+    border: 0.1rem solid #ffc0cb;
+    border-radius: 1rem;
+    padding: 0.8rem 0;
+    box-shadow: 0 1.5rem 1.5rem #0000004f;
+}
+
+.contact-us__store-hours p {
+    font-size: 1.1rem;
+}
+
+/* SITE VIEWS : PRIVACY POLICY + TERMS OF SERVICES PAGE */
+.terms_of_service__container,
+.privacy-policy__container {
+    width: 75%;
+}
+
+.privacy-policy__content,
+.terms_of_service__content {
+    background-color: #7a057a;
+    border: 0.4rem solid transparent;
+    margin-bottom: 2rem;
+}
+
+.privacy-policy__content-title,
+.terms_of_service__content-title {
+    font-size: 1.3rem;
+    display: flex;
+    justify-content: space-between;
+    background-color: #580a58;
+    color: #ffc0cb;
+    padding: 0.8rem 0.8rem;
+}
+
+.privacy-policy__content,
+.terms_of_service__content,
+.privacy-policy__content-title,
+.terms_of_service__content-title {
+    border-image: url('../medias/img/site/legal/colorful_border.jpg') 30 round;
+}
+
+.privacy-policy__content-p,
+.terms_of_service__content-p {
+    font-size: 1.2rem;
+    padding: 1rem 0.6rem 1rem 0.8rem;
+    line-height: 1.5rem;
+}
+
+.fa-chevron-down {
+    margin-left: 5rem;
+}
+
+.add-background-img {
+    background-image: url("../medias/img/site/legal/japan_background.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#audio-tape,
+#radio {
+    display: none;
+    margin-bottom: 5rem;
+    width: 55%;
+}
+
+#audio-tape img,
+#radio img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* ONLINE GUESTBOOK PAGE */
+.online-guestbook__container {
+    font-size: 1.2rem;
+    width: 85%;
+}
+
+#online-guestbook__form-content {
+    padding: 3rem;
+    border-radius: 2rem;
+}
+
+#guestbook-avatar {
+    font-size: 2.2rem;
+    height: 3.5rem;
+    border-radius: 0.2rem;
+}
+
+#guestbook-rating {
+    font-size: 1.5rem;
+    height: 3rem;
+}
+
+#guestbook-avatar,
+#guestbook-rating {
+    background-color: #800080;
+    color: #ffc0cb;
+    border: none;
+    width: 19rem;
+    border-radius: 0.2rem;
+}
+
+#guestbook-website {
+    display: none;
+}
+
+#online-guestbook__submit {
+    cursor: url('../medias/cursors/mario_kart.cur'), default;
+}
+
+.online-guestbook__add-comment-instructions {
+    margin-top: 3rem;
+    display: none;
+}
+
+.online-guestbook__comments-section {
+    background-image: linear-gradient(to bottom, #000000, #230816, #39072b, #4c0447, #570a6b);
+    border: 0.1rem solid #ffc0cb;
+    margin-top: 3rem;
+}
+
+.online-guestbook__comments-section h2 {
+    font-size: 1.8rem;
+    margin: 2.5rem 0 4rem 0;
+}
+
+.fa-comment-dots {
+    margin-left: 1rem;
+}
+
+.online-guestbook__comments-section p {
+    padding: 0.5rem 1.5rem;
+}
+
+.avatar {
+    font-size: 2.5rem;
+    vertical-align: middle;
+    margin-right: 0.5rem;
+}
+
+.online-guestbook__comments-section img {
+    width: 3rem;
+    margin-right: 0.7rem;
+    vertical-align: middle;
+}
+
+.comment {
+    text-align: justify;
+    line-height: 1.6rem;
+}
+
+.rating,
+.created_at {
+    margin-left: 1.2rem;
+}
+
+.title,
+.comment {
+    margin: 0 1.5rem;
+}
+
+.created_at {
+    color: #ffc0cb;
+    margin-bottom: 2.5rem;
+}
+
+/* SECRET PAGE */
+.secret-page__container {
+    padding-top: 5rem;
+    flex-direction: column;
+    align-items: center;
+}
+
+.secret-page__container h1 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.secret-page__container iframe {
+    width: 36rem;
+    height: 22rem;
+}
+
+/* ERROR 404 + ERROR 403 PAGES */
+.error404__container,
+.error403__container {
+    padding-top: 5rem;
+}
+
+.error404__container h1,
+.error403__container h1 {
+    font-size: 5rem;
+}
+
+.error404__page-not-found,
+.error403__forbidden {
+    font-size: 2rem;
+}
+
+.error404__looking-for,
+.error403__no-permission {
+    font-size: 1.6rem;
+    line-height: 1.3em;
+    margin-top: 1rem;
+}
+
+.sun-error-404__img,
+.sun-error-403__img {
+    width: 25%;
+    margin-top: 3rem;
+}
+
+/* IMPORTANT COMMON CONTENT */
+/* -- PADDING FOR THE PAGES */
+.admin-register__container,
+.admin-login__container,
+.admin-home__container,
+.admin-menu__container,
+.admin-collections-list__container,
+.admin-caps-catalog__container,
+.admin-cap-description__container,
+.admin-product-update__container,
+.admin-employees-list__container,
+.admin-winners-list__container,
+.about-us__container,
+.caps-catalog__container,
+.cap-description__container,
+.contact-us__container,
+.privacy-policy__container,
+.terms_of_service__container,
+.search-game__container,
+.online-guestbook__container {
+    padding: 5rem 0;
+}
+
+/* H2 TITLES FOR SOME PAGES */
+#admin-add-product__sega-genesis-controller h2,
+.admin-add-product__form h2,
+.admin-product-update__form h2,
+.admin-product-update-img__content h2,
+.about-us__intro h2,
+.about-us__end h2,
+.about-us__manufacturing-process h2,
+.contact-us__store-hours h2,
+#online-guestbook__sega-genesis-controller h2,
+.contact-us__intro h2,
+.online-guestbook__form h2,
+.search-game__explanations h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+/* ADMIN PAGES TABLES */
+.admin-collections-list__table,
+.admin-caps-catalog__table,
+.admin-employees-list__table,
+.admin-winners-list__table {
+    font-size: 1.2rem;
+    border: 0.1rem solid #ffffff;
+    border-collapse: collapse;
+    text-align: center;
+    margin: auto;
+}
+
+.admin-collections-list__table caption,
+.admin-caps-catalog__table caption,
+.admin-winners-list__table caption,
+.admin-employees-list__table caption {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.admin-collections-list__table thead,
+.admin-caps-catalog__table thead,
+.admin-winners-list__table thead,
+.admin-employees-list__table thead {
+    background-color: #00008b;
+}
+
+.admin-collections-list__table tbody,
+.admin-caps-catalog__table tbody,
+.admin-employees-list__table tbody,
+.admin-winners-list__table tbody {
+    color: #000000;
+    background-color: #ffffff;
+}
+
+.admin-collections-list__table th,
+.admin-collections-list__table td,
+.admin-caps-catalog__table th,
+.admin-caps-catalog__table td,
+.admin-employees-list__table th,
+.admin-employees-list__table td,
+.admin-winners-list__table th,
+.admin-winners-list__table td {
+    vertical-align: middle;
+    padding: 1rem;
+}
+
+/* ADMIN CAP DESCRIPTION + CAP DESCRIPTION PAGES */
+.admin-cap-description__container,
+.cap-description__container {
+    background-image: url("../medias/img/site/home/neon_mountain.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.admin-cap-description__content,
+.cap-description__content {
+    width: 98%;
+}
+
+.admin-cap-description__content-details,
+.cap-description__content-details {
+    background-color: #140713;
+    text-align: left;
+    padding: 3rem;
+}
+
+.admin-cap-description__content-details-devices,
+.cap-description__content-details-devices {
+    display: none;
+}
+
+.admin-cap-description__content-details:first-child,
+.cap-description__content-details:first-child {
+    border-right: 0.12rem solid #7f1272;
+}
+
+.admin-cap-description__content-details h2,
+.cap-description__content-details h2 {
+    color: #ffc0cb;
+}
+
+.admin-cap-description__content-price,
+.cap-description__content-details-price {
+    line-height: 4rem;
+}
+
+.cap-description__content-details-features,
+.admin-cap-description__content-details-features {
+    color: #e254bf;
+    margin-bottom: 1rem;
+}
+
+.admin-cap-description__content-details-description,
+.cap-description__content-details-description {
+    font-size: 1.3rem;
+    width: 17rem;
+    line-height: 2rem;
+}
+
+.admin-cap-description__content-details h2,
+.admin-cap-description__content-price,
+.admin-cap-description__content-details-features,
+.cap-description__content-details h2,
+.cap-description__content-details-price,
+.cap-description__content-details-features {
+    font-size: 1.4rem;
+}
+
+.made-in-US,
+.admin-cap-description__content-details-product_id,
+.admin-cap-description__content-details-collection_id,
+.admin-cap-description__content-details-quantity,
+.cap-description__content-details-product_id {
+    font-size: 1.3rem;
+}
+
+.fa-cubes,
+.fa-barcode {
+    margin-right: 0.5rem;
+}
+
+.fa-barcode {
+    color: #00ffff;
+}
+
+/* ADMIN CAPS CATALOG PAGE + ONLINE GUESTBOOK PAGES */
+#online-guestbook__sega-genesis-controller,
+#admin-add-product__sega-genesis-controller {
+    flex-direction: column;
+}
+
+#online-guestbook__sega-genesis-controller,
+#admin-add-product__sega-genesis-controller {
+    width: 36%;
+}
+
+#online-guestbook__sega-genesis-controller img,
+#admin-add-product__sega-genesis-controller img {
+    margin-bottom: 1rem;
+}
+
+#online-guestbook__sega-genesis-controller p,
+#admin-add-product__sega-genesis-controller p {
+    font-size: 1.3rem;
+    line-height: 1.7rem;
+}
+
+/* ADMIN COLLECTION LISTS + ADMIN CAPS CATALOG + PRODUCT UPDATE + EMPLOYEES LIST + WINNERS LIST + CAP DESCRIPTION PAGES */
+/* -- NAVIGATION BAR AT THE BOTTOM OF ALL THE PAGES */
+#admin-winners-list__current-page,
+#admin-collections-list__current-page,
+#admin-employees-list__current-page,
+#admin-products-list__current-page,
+#admin-collections-list__current-page,
+.cap-description__content-navs-devices i,
+.cap-description__content-navs i,
+#typing-text,
+#popup-message,
+#xmark-popup,
+footer .fa-brands {
+    color: #ffb6c1;
+}
+
+#admin-collections-list__next-page:hover,
+#admin-caps-catalog__previous-page:hover,
+#admin-caps-catalog__next-page:hover,
+#admin-product-update__next-page:hover,
+#admin-product-update__previous-page:hover,
+#admin-employees-list__next-page:hover,
+#admin-employees-list__previous-page:hover,
+#admin-winners-list__previous-page:hover,
+.admin-product__next-page:hover,
+.admin-product__previous-page:hover,
+.cap-description__previous-page:hover {
+    background-color: #ffb6c1;
+    color: #000000;
+}
+
+#admin-collections-list__next-page,
+#admin-caps-catalog__previous-page,
+#admin-caps-catalog__next-page,
+.admin-product__previous-page,
+.admin-product__next-page,
+#admin-product-update__next-page,
+#admin-product-update__previous-page,
+#admin-collections-list__next-page,
+#admin-employees-list__next-page,
+#admin-employees-list__previous-page,
+#admin-winners-list__previous-page,
+.cap-description__previous-page,
+.no-changing-page {
+    padding: 0.9rem 2.4rem;
+}
+
+#admin-collections-list__next-page,
+#admin-employees-list__next-page,
+#admin-employees-list__previous-page,
+#admin-caps-catalog__previous-page,
+#admin-caps-catalog__next-page,
+#admin-product-update__next-page,
+#admin-product-update__previous-page,
+#admin-winners-list__previous-page,
+.admin-product__next-page,
+.admin-product__previous-page,
+.cap-description__previous-page {
+    background-color: #fb0082;
+    color: #ffffff;
+}
+
+/* ALL THE FORMS */
+.admin-register__form,
+.admin-login__form,
+.admin-product-update__form,
+.admin-product-update-img__form {
+    display: flex;
+}
+
+.admin-register__form,
+.admin-login__form,
+.admin-add-product,
+.admin-product-update__form,
+.admin-product-update-img__form,
+.online-guestbook__form {
+    justify-content: center;
+    align-items: center;
+    line-height: 1.7rem;
+}
+
+.admin-add-product,
+.online-guestbook__form {
+    display: none;
+    flex-direction: column;
+}
+
+#admin-register__form-content,
+#admin-login__form-content,
+#admin-add-product__form-content,
+#admin-product-update__form-content,
+#admin-product-update-img__form-content,
+#online-guestbook__form-content {
+    font-size: 1.2rem;
+    border: 0.1rem solid #ffc0cb;
+    box-shadow: 0 1.5rem 1.5rem #0000004f;
+}
+
+#admin-register__form-content,
+#admin-login__form-content,
+#admin-add-product__form-content,
+#admin-product-update__form-content {
+    padding: 4.5rem 5rem;
+}
+
+#admin-register__form-content,
+#admin-login__form-content,
+#admin-add-product__form-content,
+#admin-product-update__form-content,
+#online-guestbook__form-content {
+    background: url('../medias/img/forms/mountain.jpg') no-repeat center;
+}
+
+#admin-register__form-content,
+#admin-login__form-content,
+#admin-add-product__form-content,
+#online-guestbook__form-content {
+    background-size: 100% 100%;
+}
+
+#admin-register-username,
+#admin-login-username,
+#admin-add-product-name,
+#admin-add-product-price,
+#admin-add-product-quantity,
+#admin-add-product-image,
+#admin-add-product-collection_id,
+#admin-add-product-admin_contributor_id,
+#admin-product-update-name,
+#admin-product-update-price,
+#admin-product-update-quantity,
+#admin-product-update-admin_contributor_id,
+#admin-product-update-collection_id,
+#guestbook-username,
+#guestbook-avatar,
+#guestbook-title,
+#guestbook-rating {
+    margin-bottom: 1.5rem;
+}
+
+#admin-add-product-description,
+#admin-product-update-description,
+#guestbook-comment {
+    resize: none;
+}
+
+#admin-register__form-content input[type=text],
+#admin-register__form-content input[type=password],
+#admin-login__form-content input[type=text],
+#admin-login__form-content input[type=password],
+#admin-add-product__form-content input[type=text],
+#admin-add-product__form-content input[type=number],
+#admin-product-update__form-content input[type=text],
+#admin-product-update__form-content input[type=number],
+#online-guestbook__form-content input[type=text],
+#online-guestbook__form-content input[type=password] {
+    width: 19rem;
+    padding: 0.7rem 0.5rem;
+    border-radius: 0.2rem;
+    border: 0.1rem solid #ffc0cb;
+    font-size: 1rem;
+}
+
+#admin-add-product__form-content textarea,
+#admin-product-update__form-content textarea,
+#online-guestbook__form-content textarea {
+    border-radius: 0.2rem;
+    border: 0.1rem solid #ffc0cb;
+    font-size: 1rem;
+    width: 27rem;
+    height: 14rem;
+}
+
+#admin-register__form-content input:focus::placeholder,
+#admin-login__form-content input:focus::placeholder,
+#admin-add-product__form-content input:focus::placeholder,
+#admin-add-product__form-content textarea:focus::placeholder,
+#online-guestbook__form-content input:focus::placeholder,
+#online-guestbook__form-content textarea:focus::placeholder {
+    color: #00fff2;
+}
+
+#admin-register__form-content input:focus,
+#admin-login__form-content input:focus,
+#admin-add-product__form-content input:focus,
+#admin-add-product__form-content textarea:focus,
+#admin-product-update__form-content input:focus,
+#admin-product-update__form-content textarea:focus,
+#online-guestbook__form-content input:focus,
+#online-guestbook__form-content textarea:focus {
+    background: linear-gradient(#000000, #800080) no-repeat fixed;
+    color: #ffffff;
+}
+
+#admin-add-product-image,
+#admin-product-update-image {
+    display: none;
+}
+
+.fa-image {
+    margin-right: 0.5rem;
+}
+
+.admin-register__instructions,
+.admin-add-product__instructions,
+.admin-product-update__instructions,
+.online-guestbook__add-comment-instructions {
+    background-color: #800080;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    border: 0.1rem solid #ffc0cb;
+    border-radius: 1rem;
+    padding: 1rem;
+    box-shadow: 0 0.4rem 1rem #000000cc;
+}
+
+.admin-register__instructions,
+.online-guestbook__add-comment-instructions {
+    text-align: justify;
+}
+
+.admin-add-product__instructions,
+.admin-product-update__instructions {
+    text-align: left;
+}
+
+.admin-register__instructions,
+.online-guestbook__add-comment-instructions {
+    width: 60%;
+}
+
+.admin-add-product__instructions,
+.admin-product-update__instructions {
+    width: 62%;
+}
+
+.admin-register__instructions h3,
+.admin-add-product__instructions h3,
+.admin-product-update__instructions h3,
+.online-guestbook__add-comment-instructions h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.fa-triangle-exclamation {
+    color: #ffff00;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+#admin-register__submit,
+#admin-login__submit,
+#admin-add-product__submit,
+#admin-product-update__submit,
+#admin-product-update-img__submit,
+#online-guestbook__submit {
+    font-size: 1.1rem;
+    background-color: #420c42;
+    color: #ffffff;
+    display: grid;
+    border: 0.1rem solid #ffc0cb;
+    padding: 0.5rem 1.5rem;
+    margin-top: 2rem;
+}
+
+#admin-register__submit:hover,
+#admin-login__submit:hover,
+#admin-product-update__submit:hover,
+#admin-product-update-img__submit:hover,
+#admin-add-product__submit:hover,
+#online-guestbook__submit:hover {
+    background-color: #b723ba;
+}
+
+.check-form,
+.xmark-form {
+    display: none;
+    margin-left: 0.5rem;
+}
+
+.check-image-form,
+.xmark-image-form {
+    display: none;
+    margin-top: 2rem;
+}
+
+.check-form,
+.check-image-form {
+    color: #008000;
+}
+
+.xmark-form,
+.xmark-image-form {
+    color: #ff0000;
+}
+
+#admin-register-message,
+#admin-login-message,
+#add-product-message,
+#product-update-message,
+#guestbook-message {
+    background-color: #420c42;
+    color: #ffff00;
+    font-size: 1.1rem;
+    border: 0.1rem solid #ffc0cb;
+    padding: 0.5rem 0.5rem;
+    margin-top: 2rem;
+    display: none;
+}
+
+.cap-description__content-details-features,
+.admin-cap-description__content-details-features,
+.admin-cap-description__content-details-features-devices,
+.cap-description__content-details-features-devices,
+.footer__nav h2,
+.privacy-policy__content-title,
+.terms_of_service__content-title {
+    text-transform: uppercase;
+}
+
+.admin-register__instructions span,
+.admin-add-product__instructions span,
+.admin-product-update__instructions span,
+.online-guestbook__add-comment-instructions span,
+.blue-link {
+    text-decoration: underline;
+}
+
+#admin-register-message,
+#admin-login-message,
+#add-product-message,
+#product-update-message,
+#guestbook-message,
+.admin-register__instructions h3,
+.admin-add-product__instructions h3,
+.admin-product-update__instructions h3,
+.online-guestbook__add-comment-instructions h3,
+#admin-add-product__sega-genesis-controller h2,
+.admin-add-product__form h2,
+.admin-product-update__form h2,
+.admin-product-update-img__content h2,
+.about-us__intro h2,
+.about-us__end h2,
+.about-us__manufacturing-process h2,
+.caps-catalog__content-details h3,
+.contact-us__store-hours h2,
+#online-guestbook__sega-genesis-controller h2,
+.username,
+.title,
+.contact-us__intro h2,
+.online-guestbook__form h2,
+.search-game__explanations h2,
+.about-us__presentation h2 {
+    font-weight: bold;
+}
+
+.admin-cap-description__content-price,
+.cap-description__content-details-price,
+.admin-cap-description__content-price-devices,
+.cap-description__content-details-price-devices,
+.cap-description__content-navs-devices i:hover,
+.header__menu-desktop i:hover,
+.caps-catalog__content-details h3,
+.caps-catalog__content a:hover,
+.cap-description__content-navs i:hover,
+.made-in-US,
+.fa-star-aside,
+.win-game-trophy,
+#xmark-popup:hover {
+    color: #ffd700;
+}
+
+@media only screen and (min-width: 1824px) {
+    .site-home-top {
+        padding: 5rem 0 51rem 0;
+    }
+
+    .privacy-policy__container {
+        padding: 5rem 0 19.5rem 0;
+    }
+
+    .search-game__container {
+        padding: 5rem 0 29.5rem 0;
+    }
+}
+
+/* MEDIA QUERIES : (min-width: 769px) and (max-width: 1024px) */
+@media only screen and (min-width: 768px) and (max-width: 1224px) {
+
+    /* VIEWS OF THE LAYOUTS */
+    /* HEADER */
+    /* -- ADMIN LAYOUT */
+    .sun__img {
+        width: 4.2rem;
+    }
+
+    .dashboard-logo__img {
+        width: 30rem;
+    }
+
+    /* SITE LAYOUT */
+    .menu__desktop {
+        display: none;
+    }
+
+    .menu__devices {
+        display: block;
+    }
+
+    .dropdown-menu-title {
+        display: flex;
+        align-items: center;
+    }
+
+    .menu-dropdown-content {
+        background: linear-gradient(#4e054e, #800080) no-repeat fixed;
+        color: #ffffff;
+        font-size: 1.2rem;
+        text-align: left;
+        line-height: 1.8rem;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        width: 8.7rem;
+    }
+
+    .invisible-menu {
+        visibility: hidden;
+    }
+
+    .dropdown-content:active {
+        background: linear-gradient(to right, #800080 0%, #ffc0cb 100%);
+    }
+
+    .fa-bars {
+        font-size: 1.6rem;
+        color: #b913b9;
+        transform: rotate(0deg);
+        transition: 0.3s linear;
+    }
+
+    .changing-bar {
+        transform: rotate(90deg);
+        transition: 0.3s linear;
+        color: #ff0000;
+    }
+
+    #header-logo-devices__img {
+        width: 22rem;
+        margin-left: 6rem;
+    }
+
+    /* FOOTER */
+    /* SITE LAYOUT */
+    .footer__navs {
+        display: none;
+    }
+
+    /* VIEWS OF THE PAGES */
+    /* ADMIN VIEWS */
+    /* ADMIN CAPS CATALOG PAGE */
+    .admin-caps-catalog__img {
+        width: 13rem;
+    }
+
+    .admin-caps-catalog__table-actions i {
+        font-size: 1.2rem;
+        padding: 1.5rem 0;
+    }
+
+    .upload__label-img {
+        width: 13rem;
+    }
+
+    /* -- ADMIN EMPLOYEES LIST */
+    .admin-employees-list__table {
+        width: 85%;
+    }
+
+    /* ADMIN EDIT CAP PAGE */
+    #admin-product-update-img__form-content {
+        padding: 2rem;
+    }
+
+    /* SITE VIEWS */
+    /* HOME PAGE */
+    .site-home-top {
+        padding: 4rem 0 25rem 0;
+    }
+
+    .site-home-top h1 {
+        font-size: 2.7rem;
+        margin-bottom: 1.5rem;
+    }
+
+    #site-home-top__link {
+        font-size: 1.4rem;
+        width: 18rem;
+    }
+
+    /* ABOUT US PAGE */
+    .about-us__presentation {
+        padding: 1.2rem 0.8rem 5rem 0.8rem;
+    }
+
+    .about-us__end img {
+        margin-top: 0.4rem;
+        width: 4.5rem;
+    }
+
+    #anthony-bardinter__img,
+    #marta-hernandez__img {
+        width: 18rem;
+    }
+
+    .about-us__manufacturing-process iframe {
+        width: 30rem;
+        height: 18rem;
+    }
+
+    /* ADMIN CAPS CATALOG + CAPS CATALOG PAGE */
+    .caps-catalog__content a {
+        font-size: 1.7rem;
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+
+    .caps-catalog__content-details {
+        width: 18rem;
+    }
+
+    .caps-catalog__content-details hgroup {
+        font-size: 1.3rem;
+    }
+
+    .cap-description__content-details-devices,
+    .admin-cap-description__content-details-devices {
+        display: none;
+    }
+
+    #akira-motorbike__img {
+        width: 6rem;
+    }
+
+    #popup-message {
+        width: 24rem;
+        top: 70%;
+    }
+
+    /* SEARCH GAME PAGE */
+    .active #search-game-text {
+        width: 12rem;
+    }
+
+    .win__img,
+    .loose__img {
+        border: 0.1rem solid #ffc0cb;
+        width: 40rem;
+    }
+
+    /* -- CONTACT US PAGE */
+    .contact-us__google-maps iframe {
+        width: 32rem;
+        height: 23rem;
+    }
+
+    .contact-us__store-hours {
+        width: 16rem;
+    }
+
+    /* ONLINE GUESTBOOK PAGE */
+    .online-guestbook__comments-section img {
+        width: 2.9rem;
+    }
+
+    #guestbook-avatar {
+        font-size: 2rem;
+        width: 16rem;
+        height: 3.5rem;
+    }
+
+    #guestbook-rating {
+        font-size: 1.4rem;
+        width: 16rem;
+        height: 3rem;
+    }
+
+    #online-guestbook__form-content {
+        padding: 2.5rem;
+    }
+
+    /* -- SECRET PAGE */
+    .secret-page__container iframe {
+        width: 30rem;
+        height: 18rem;
+    }
+
+    /* IMPORTANT COMMON CONTENT */
+    /* TABLES*/
+    .admin-collections-list__table,
+    .admin-caps-catalog__table,
+    .admin-employees-list__table,
+    .admin-winners-list__table {
+        font-size: 1.1rem;
+    }
+
+    .admin-collections-list__table caption,
+    .admin-caps-catalog__table caption,
+    .admin-winners-list__table caption,
+    .admin-employees-list__table caption {
+        font-size: 1rem;
+    }
+
+    /* ALL THE FORMS */
+    #admin-register__form-content,
+    #admin-login__form-content,
+    #admin-add-product__form-content,
+    #admin-product-update__form-content,
+    #admin-product-update-img__form-content,
+    #online-guestbook__form-content {
+        font-size: 1.2rem;
+    }
+
+    #admin-register__form-content input[type=text],
+    #admin-register__form-content input[type=password],
+    #admin-login__form-content input[type=text],
+    #admin-login__form-content input[type=password],
+    #admin-add-product__form-content input[type=text],
+    #admin-add-product__form-content input[type=number],
+    #admin-product-update__form-content input[type=text],
+    #admin-product-update__form-content input[type=number],
+    #online-guestbook__form-content input[type=text],
+    #online-guestbook__form-content input[type=password] {
+        font-size: 0.9rem;
+        width: 16rem;
+    }
+
+    #admin-add-product__form-content textarea,
+    #admin-product-update__form-content textarea,
+    #online-guestbook__form-content textarea {
+        font-size: 0.9rem;
+        width: 20rem;
+    }
+
+    #admin-register__form-content,
+    #admin-login__form-content,
+    #admin-add-product__form-content,
+    #admin-product-update__form-content {
+        padding: 3rem 3.5rem;
+    }
+
+    #admin-register__submit,
+    #admin-login__submit,
+    #admin-add-product__submit,
+    #admin-product-update__submit,
+    #admin-product-update-img__submit,
+    #online-guestbook__submit,
+    #admin-add-product-image {
+        font-size: 1rem;
+    }
+
+    /* 	ADMIN CAPS CATALOG PAGE + ONLINE GUESTBOOK PAGE */
+    #online-guestbook__sega-genesis-controller,
+    #admin-add-product__sega-genesis-controller {
+        width: 20rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    /* CSS RESET */
+    html,
+    body {
+        height: 100%;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+
+    .h1-model {
+        font-size: 2.5rem;
+        margin-bottom: 4rem;
+    }
+
+    /* VIEWS OF THE LAYOUTS */
+    /* ADMIN LAYOUT */
+    .header__dashboard {
+        padding: 1rem 0;
+    }
+
+    .sun__img {
+        width: 2.4rem;
+    }
+
+    .dashboard-logo__img {
+        width: 16rem;
+    }
+
+    /* SITE LAYOUT */
+    /* HEADER */
+    .menu__desktop {
+        display: none;
+    }
+
+    .menu__devices {
+        display: block;
+        padding: 0.5rem 0;
+    }
+
+    .dropdown-menu-title {
+        display: flex;
+        align-items: center;
+    }
+
+    .menu-dropdown-content {
+        background: linear-gradient(#4e054e, #800080) no-repeat fixed;
+        color: #ffffff;
+        font-size: 1rem;
+        text-align: left;
+        line-height: 1.8rem;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        width: 8.1rem;
+    }
+
+    .invisible-menu {
+        visibility: hidden;
+    }
+
+    .dropdown-content:active {
+        background: linear-gradient(to right, #800080 0%, #ffc0cb 100%);
+    }
+
+    .fa-bars {
+        font-size: 1.4rem;
+        color: #b913b9;
+        transform: rotate(0deg);
+        transition: 0.3s linear;
+    }
+
+    .changing-bar {
+        transform: rotate(90deg);
+        transition: 0.3s linear;
+        color: #ff0000;
+    }
+
+    #header-logo-devices__img {
+        width: 12rem;
+        margin-left: 6.1rem;
+    }
+
+    /* FOOTER */
+    /* SITE LAYOUT */
+    .footer__navs {
+        display: none;
+    }
+
+    /* VIEWS OF THE PAGES */
+    /* ADMIN VIEWS */
+    /* ADMIN HOME + ADMIN MENU PAGES */
+    .admin-home__container,
+    .admin-menu__container {
+        font-size: 1.1rem;
+    }
+
+    .admin-menu__container p {
+        font-size: 1.2rem;
+    }
+
+    .admin-home__navs li,
+    .admin-menu__navs li {
+        width: 13rem;
+    }
+
+    /* ADMIN CAPS CATALOG */
+    .upload__label-img {
+        width: 9rem;
+    }
+
+    /* ADMIN CAP DESCRIPTION PAGE */
+    #admin-product-update-img__form-content {
+        padding: 1rem;
+    }
+
+    #admin-collections-list__next-page,
+    #admin-caps-catalog__previous-page,
+    #admin-caps-catalog__next-page,
+    .admin-product__previous-page,
+    .admin-product__next-page,
+    #admin-product-update__next-page,
+    #admin-product-update__previous-page,
+    #admin-collections-list__next-page,
+    #admin-employees-list__next-page,
+    #admin-employees-list__previous-page,
+    #admin-winners-list__previous-page,
+    .cap-description__previous-page,
+    .no-changing-page {
+        padding: 0.45rem 1.4rem;
+    }
+
+    .admin__bottom-navs i {
+        font-size: 1.4rem;
+        padding: 0 0.7rem;
+    }
+
+    /* SITE VIEWS */
+    /* HOME PAGE */
+    .site-home-top {
+        background-image: url("../medias/img/site/home/purple_mountain_mobile.jpg");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+
+    .site-home-top {
+        padding: 2.5rem 0 44.5rem 0;
+    }
+
+    .site-home-top h1 {
+        font-size: 1.8rem;
+        margin-bottom: 1.1rem;
+    }
+
+    #site-home-top__link {
+        font-size: 1rem;
+        width: 14rem;
+    }
+
+    /* ABOUT US PAGE */
+    .about-us__container {
+        font-size: 1rem;
+    }
+
+    .about-us__presentation {
+        padding: 1.2rem 0.8rem 3.5rem 0.8rem;
+    }
+
+    .about-us__presentation h2 {
+        font-size: 1.2rem;
+        margin-bottom: 1.6rem;
+    }
+
+    #anthony-bardinter__img,
+    #marta-hernandez__img {
+        width: 16rem;
+    }
+
+    .about-us__end img {
+        width: 4rem;
+    }
+
+    .about-us__manufacturing-process iframe {
+        width: 18rem;
+        height: 12rem;
+    }
+
+    /* CAPS CATALOG PAGE */
+    .caps-catalog__content-details {
+        width: 20rem;
+    }
+
+    .caps-catalog__content-details hgroup {
+        font-size: 1.2rem;
+    }
+
+    .caps-catalog__content a {
+        font-size: 1.5rem;
+        width: 3.5rem;
+        height: 3.2rem;
+    }
+
+    #akira-motorbike__img {
+        width: 7rem;
+    }
+
+    /* ADMIN CAPS DESCRIPTION PAGE + CAPS DESCRIPTION PAGE */
+    .admin-cap-description__container,
+    .cap-description__container {
+        background-image: url("../medias/img/site/home/neon_mountain_mobile.jpg");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-attachment: scroll;
+        background-size: cover;
+    }
+
+    .cap-description__content-details,
+    .admin-cap-description__content-details {
+        display: none;
+    }
+
+    .cap-description__content-details-devices,
+    .admin-cap-description__content-details-devices {
+        display: block;
+    }
+
+    .cap-description__content,
+    .admin-cap-description__content {
+        background-color: #140713;
+        flex-direction: column;
+        align-items: center;
+        border: 0.1rem solid #800080;
+        width: 21rem;
+    }
+
+    .cap-description__img,
+    .admin-cap-description__img {
+        display: flex;
+        justify-content: center;
+        border: none;
+        padding: 1.5rem;
+        width: 20rem;
+    }
+
+    .admin-cap-description__content-details-devices h2,
+    .cap-description__content-details-devices h2 {
+        color: #ffc0cb;
+    }
+
+    .admin-cap-description__content-price-devices,
+    .cap-description__content-details-price-devices {
+        line-height: 4rem;
+    }
+
+    .admin-cap-description__content-details-features-devices,
+    .cap-description__content-details-features-devices {
+        color: #e254bf;
+        margin-bottom: 0.7rem;
+    }
+
+    .admin-cap-description__content-details-description-devices,
+    .cap-description__content-details-description-devices {
+        width: 15.5rem;
+        line-height: 2rem;
+    }
+
+    .admin-cap-description__content-details-product_id-devices {
+        line-height: 3rem;
+    }
+
+    .cap-description__content-details-product_id-devices {
+        line-height: 5rem;
+    }
+
+    .admin-cap-description__content-details-quantity-devices {
+        margin-top: 2.7rem;
+    }
+
+    .admin-cap-description__content-details-collection_id-devices {
+        margin-bottom: 1.5rem;
+    }
+
+    .cap-description__content-navs-devices {
+        display: flex;
+        margin-bottom: 1.5rem;
+    }
+
+    .cap-description__content-navs-devices i {
+        background: #000000;
+        border: 0.1rem solid #800080;
+        padding: 0.5rem 1rem;
+    }
+
+    .cap-description__content-navs-devices li:nth-child(2) {
+        margin: 0 0.6rem 0 0.6rem;
+    }
+
+    .cap-description__content-navs-devices i:hover {
+        background-color: #800080;
+    }
+
+    .admin-cap-description__content-details-devices h2,
+    .admin-cap-description__content-details-features-devices,
+    .admin-cap-description__content-price-devices,
+    .cap-description__content-details-devices h2,
+    .cap-description__content-details-price-devices,
+    .cap-description__content-details-features-devices,
+    .cap-description__content-navs-devices i {
+        font-size: 1.2rem;
+    }
+
+    .admin-cap-description__content-details-description-devices,
+    .admin-cap-description__content-details-quantity-devices,
+    .admin-cap-description__content-details-collection_id-devices .cap-description__content-details-product_id-devices,
+    .cap-description__content-details-description-devices,
+    .made-in-US,
+    .cap-description__content-details-product_id-devices {
+        font-size: 1rem;
+    }
+
+    #popup-message {
+        font-size: 1.2rem;
+        width: 18rem;
+        left: 0%;
+        top: 50%;
+    }
+
+    /* SEARCH GAME PAGE */
+    .search-game__container {
+        font-size: 1rem;
+        line-height: 1.7rem;
+        padding: 2.8rem 0;
+    }
+
+    .search-game__search-bar i {
+        font-size: 1.2rem;
+    }
+
+    .active #search-game-text {
+        width: 9.5rem;
+    }
+
+    #typing-text {
+        font-size: 1.3rem;
+    }
+
+    #win-game-text h3,
+    #loose-game-text h3,
+    #forgot-searching-text h3 {
+        font-size: 1.2rem;
+    }
+
+    .win__img,
+    .loose__img {
+        border: 0.1rem solid #ffc0cb;
+        width: 18rem;
+    }
+
+    .sonic__img {
+        width: 10rem;
+    }
+
+    /* CONTACT US PAGE */
+    .contact-us__container,
+    .contact-us__store-hours p {
+        font-size: 1rem;
+    }
+
+    .contact-us__store-hours {
+        font-size: 1rem;
+        width: 15.8rem;
+    }
+
+    .contact-us__google-maps iframe {
+        width: 20rem;
+        height: 18rem;
+    }
+
+    /* PRIVACY POLICY + TERMS OF SERVICES PAGE */
+    .terms_of_service__container,
+    .privacy-policy__container {
+        font-size: 1rem;
+        line-height: 1.2rem;
+    }
+
+    .privacy-policy__container {
+        padding: 2.8rem 0;
+    }
+
+    .privacy-policy__content-title,
+    .terms_of_service__content-title {
+        font-size: 1.2rem;
+    }
+
+    .privacy-policy__content-p,
+    .terms_of_service__content-p {
+        font-size: 1rem;
+    }
+
+    .terms_of_service__content-title {
+        text-align: left;
+    }
+
+    .fa-chevron-down {
+        margin-left: 1rem;
+    }
+
+    /* ONLINE GUESTBOOK PAGE */
+    .online-guestbook__container {
+        font-size: 1rem;
+    }
+
+    #online-guestbook__form-content {
+        padding: 2rem;
+    }
+
+    #guestbook-avatar {
+        font-size: 1.5rem;
+        width: 14rem;
+        height: 2.7rem;
+    }
+
+    #guestbook-rating {
+        font-size: 1.3rem;
+        width: 14rem;
+        height: 2.6rem;
+    }
+
+    .online-guestbook__comments-section h2 {
+        font-size: 1.5rem;
+    }
+
+    .avatar {
+        font-size: 2rem;
+        vertical-align: middle;
+    }
+
+    .comment {
+        text-align: justify;
+        font-size: 1rem;
+    }
+
+    /* SECRET PAGE */
+    .secret-page__container h1 {
+        font-size: 1.8rem;
+        margin-bottom: 2rem;
+    }
+
+    .secret-page__container iframe {
+        width: 19rem;
+        height: 13rem;
+    }
+
+    /* ERROR PAGES */
+    .error404__container h1,
+    .error403__container h1 {
+        font-size: 2rem;
+    }
+
+    .error404__page-not-found,
+    .error403__forbidden {
+        font-size: 1.2rem;
+    }
+
+    .error404__looking-for,
+    .error403__no-permission {
+        font-size: 1.1rem;
+    }
+
+    .sun-error-404__img,
+    .sun-error-403__img {
+        width: 12.5rem;
+        margin-top: 2.7rem;
+    }
+
+    /* 	IMPORTANT COMMON CONTENT */
+    .admin-add-product__form h2,
+    #admin-add-product__sega-genesis-controller h2,
+    .admin-product-update__form h2,
+    .admin-product-update-img__content h2,
+    .about-us__intro h2,
+    .about-us__end h2,
+    .about-us__manufacturing-process h2,
+    .contact-us__intro h2,
+    .contact-us__store-hours h2,
+    #online-guestbook__sega-genesis-controller h2,
+    .online-guestbook__form h2,
+    .search-game__explanations h2 {
+        font-size: 1.2rem;
+    }
+
+    /* ADMIN VIEWS + SITE VIEWS : COMMON CONTENT */
+    .admin-register__container,
+    .admin-login__container,
+    .admin-home__container,
+    .admin-menu__container,
+    .admin-collections-list__container,
+    .admin-caps-catalog__container,
+    .admin-cap-description__container,
+    .admin-product-update__container,
+    .admin-employees-list__container,
+    .admin-winners-list__container,
+    .about-us__container,
+    .caps-catalog__container,
+    .cap-description__container,
+    .contact-us__container,
+    .terms_of_service__container,
+    .online-guestbook__container {
+        padding: 2.8rem 0;
+    }
+
+    #admin-register__form-content,
+    #admin-login__form-content,
+    #admin-add-product__form-content,
+    #admin-product-update__form-content,
+    #admin-product-update-img__form-content,
+    #online-guestbook__form-content {
+        font-size: 1rem;
+    }
+
+    #admin-register__form-content,
+    #admin-login__form-content,
+    #admin-add-product__form-content,
+    #admin-product-update__form-content {
+        padding: 2rem 2rem;
+    }
+
+    #admin-register__form-content input[type=text],
+    #admin-register__form-content input[type=password],
+    #admin-login__form-content input[type=text],
+    #admin-login__form-content input[type=password],
+    #admin-add-product__form-content input[type=text],
+    #admin-add-product__form-content input[type=number],
+    #admin-product-update__form-content input[type=text],
+    #admin-product-update__form-content input[type=number],
+    #online-guestbook__form-content input[type=text],
+    #online-guestbook__form-content input[type=password] {
+        width: 14rem;
+        font-size: 0.9rem;
+    }
+
+    #admin-add-product__form-content textarea,
+    #admin-product-update__form-content textarea,
+    #online-guestbook__form-content textarea {
+        width: 14rem;
+        font-size: 0.9rem;
+    }
+
+    .admin-register__instructions,
+    .online-guestbook__add-comment-instructions {
+        text-align: left;
+    }
+
+    .admin-register__instructions,
+    .admin-add-product__instructions,
+    .admin-product-update__instructions,
+    .online-guestbook__add-comment-instructions {
+        font-size: 1rem;
+    }
+
+    .admin-register__instructions h3,
+    .admin-add-product__instructions h3,
+    .admin-product-update__instructions h3,
+    .online-guestbook__add-comment-instructions h3 {
+        font-size: 1.1rem;
+    }
+
+    .fa-triangle-exclamation {
+        font-size: 1.1rem;
+    }
+
+    #admin-register__submit,
+    #admin-login__submit,
+    #admin-add-product__submit,
+    #admin-product-update__submit,
+    #admin-product-update-img__submit,
+    #online-guestbook__submit,
+    #admin-add-product-image {
+        font-size: 0.9rem;
+    }
+
+    #admin-register-message,
+    #admin-login-message,
+    #add-product-message,
+    #product-update-message,
+    #guestbook-message {
+        font-size: 1rem;
+    }
+
+    .admin-caps-catalog__table th,
+    .admin-caps-catalog__table td,
+    .admin-collections-list__table th,
+    .admin-collections-list__table td,
+    .admin-winners-list__table th,
+    .admin-winners-list__table td {
+        padding: 0.6rem;
+    }
+
+    .admin-employees-list__table th,
+    .admin-employees-list__table td {
+        padding: 0.5rem;
+    }
+
+    .admin-collections-list__table caption,
+    .admin-caps-catalog__table caption,
+    .admin-winners-list__table caption,
+    .admin-employees-list__table caption {
+        font-size: 1rem;
+    }
+
+    .admin-collections-list__table {
+        width: 70%;
+        font-size: 0.9rem;
+        padding: 0.5rem;
+    }
+
+    .admin-winners-list__table {
+        width: 70%;
+        font-size: 0.8rem;
+    }
+
+    .admin-caps-catalog__table {
+        font-size: 0.8rem;
+    }
+
+    .admin-employees-list__table {
+        width: 70%;
+        font-size: 0.33rem;
+    }
+
+    .admin-caps-catalog__table {
+        width: 50%;
+    }
+
+    .admin-caps-catalog__table i {
+        font-size: 0.6rem;
+        padding: 0.5rem 0;
+    }
+
+    .admin-caps-catalog__img {
+        width: 3rem;
+        height: 4.5rem;
+    }
+
+    /* ADMIN CAPS CATALOG PAGE + ONLINE GUESTBOOK PAGES */
+    #online-guestbook__sega-genesis-controller,
+    #admin-add-product__sega-genesis-controller {
+        width: 16rem;
+    }
+
+    #online-guestbook__sega-genesis-controller p,
+    #admin-add-product__sega-genesis-controller p {
+        font-size: 1.1rem;
+    }
+}

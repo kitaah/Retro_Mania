@@ -1,0 +1,398 @@
+<<<<<<< HEAD
+(っ◔◡◔)っ ♥ LOG ♥PDOException: SQLSTATE[HY000] [2002] Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée.
+ in D:\Programmes\wamp64\www\Retro_Mania\Models\DatabaseConnection.php:19
+=======
+(っ◔◡◔)っ ♥ LOG ♥PDOException: SQLSTATE[HY000] [1045] Accès refusé pour l'utilisateur: 'root'@'@localhost' (mot de passe: OUI) in D:\Programmes\wamp64\www\Retro_Mania\Models\DatabaseConnection.php:19
+>>>>>>> fcf3b4a (Last version)
+Stack trace:
+#0 D:\Programmes\wamp64\www\Retro_Mania\Models\DatabaseConnection.php(19): PDO->__construct('mysql:host=loca...', 'root', 'root')
+#1 D:\Programmes\wamp64\www\Retro_Mania\Models\DatabaseConnection.php(33): Models\DatabaseConnection->setDbCon()
+#2 D:\Programmes\wamp64\www\Retro_Mania\Models\Read.php(161): Models\DatabaseConnection->getDbCon()
+#3 D:\Programmes\wamp64\www\Retro_Mania\Models\Read.php(173): Models\Read->capsCatalogVisitors()
+#4 D:\Programmes\wamp64\www\Retro_Mania\Controller\Controller.php(269): Models\Read->readCapsCatalogVisitors()
+#5 D:\Programmes\wamp64\www\Retro_Mania\Controller\Controller.php(276): Controller\Controller->capsCatalogVisitors()
+#6 D:\Programmes\wamp64\www\Retro_Mania\index.php(91): Controller\Controller->displayCapsCatalogVisitors()
+<<<<<<< HEAD
+#7 {main}26-10-2022 📅 14:57:24 ⏰
+PDOException: SQLSTATE[HY000] [2002] Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée.
+ in D:\Programmes\wamp64\www\Retro_Mania\Models\DatabaseConnection.php:19
+Stack trace:
+#0 D:\Programmes\wamp64\www\Retro_Mania\Models\DatabaseConnection.php(19): PDO->__construct('mysql:host=loca...', 'root', 'root')
+=======
+#7 {main}27-10-2022 📅 00:27:55 ⏰
+PDOException: SQLSTATE[HY000] [1045] Accès refusé pour l'utilisateur: 'mel'@'@localhost' (mot de passe: OUI) in D:\Programmes\wamp64\www\Retro_Mania\Models\DatabaseConnection.php:19
+Stack trace:
+#0 D:\Programmes\wamp64\www\Retro_Mania\Models\DatabaseConnection.php(19): PDO->__construct('mysql:host=loca...', 'mel', 'ch.LOOD2.t38')
+>>>>>>> fcf3b4a (Last version)
+#1 D:\Programmes\wamp64\www\Retro_Mania\Models\DatabaseConnection.php(33): Models\DatabaseConnection->setDbCon()
+#2 D:\Programmes\wamp64\www\Retro_Mania\Models\Read.php(161): Models\DatabaseConnection->getDbCon()
+#3 D:\Programmes\wamp64\www\Retro_Mania\Models\Read.php(173): Models\Read->capsCatalogVisitors()
+#4 D:\Programmes\wamp64\www\Retro_Mania\Controller\Controller.php(269): Models\Read->readCapsCatalogVisitors()
+#5 D:\Programmes\wamp64\www\Retro_Mania\Controller\Controller.php(276): Controller\Controller->capsCatalogVisitors()
+#6 D:\Programmes\wamp64\www\Retro_Mania\index.php(91): Controller\Controller->displayCapsCatalogVisitors()
+<<<<<<< HEAD
+#7 {main}26-10-2022 📅 14:57:26 ⏰
+PDOException: SQLSTATE[HY000] [2002] Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée.
+ in D:\Programmes\wamp64\www\Retro_Mania\Models\DatabaseConnection.php:19
+Stack trace:
+#0 D:\Programmes\wamp64\www\Retro_Mania\Models\DatabaseConnection.php(19): PDO->__construct('mysql:host=retr...', 'root', 'root')
+#1 D:\Programmes\wamp64\www\Retro_Mania\Models\DatabaseConnection.php(33): Models\DatabaseConnection->setDbCon()
+#2 D:\Programmes\wamp64\www\Retro_Mania\Models\Read.php(161): Models\DatabaseConnection->getDbCon()
+#3 D:\Programmes\wamp64\www\Retro_Mania\Models\Read.php(173): Models\Read->capsCatalogVisitors()
+#4 D:\Programmes\wamp64\www\Retro_Mania\Controller\Controller.php(269): Models\Read->readCapsCatalogVisitors()
+#5 D:\Programmes\wamp64\www\Retro_Mania\Controller\Controller.php(276): Controller\Controller->capsCatalogVisitors()
+#6 D:\Programmes\wamp64\www\Retro_Mania\index.php(91): Controller\Controller->displayCapsCatalogVisitors()
+#7 {main}26-10-2022 📅 14:59:45 ⏰
+PDOException: PDO::__construct(): php_network_getaddresses: getaddrinfo failed: H�te inconnu.  in D:\Programmes\wamp64\www\Retro_Mania\Models\DatabaseConnection.php:20
+Stack trace:
+#0 D:\Programmes\wamp64\www\Retro_Mania\Models\DatabaseConnection.php(20): PDO->__construct('mysql:host=retr...', 'root', 'root')
+#1 D:\Programmes\wamp64\www\Retro_Mania\Models\DatabaseConnection.php(34): Models\DatabaseConnection->setDbCon()
+#2 D:\Programmes\wamp64\www\Retro_Mania\Models\Read.php(161): Models\DatabaseConnection->getDbCon()
+#3 D:\Programmes\wamp64\www\Retro_Mania\Models\Read.php(173): Models\Read->capsCatalogVisitors()
+#4 D:\Programmes\wamp64\www\Retro_Mania\Controller\Controller.php(269): Models\Read->readCapsCatalogVisitors()
+#5 D:\Programmes\wamp64\www\Retro_Mania\Controller\Controller.php(276): Controller\Controller->capsCatalogVisitors()
+#6 D:\Programmes\wamp64\www\Retro_Mania\index.php(91): Controller\Controller->displayCapsCatalogVisitors()
+#7 {main}
+
+Next PDOException: SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: H�te inconnu.  in D:\Programmes\wamp64\www\Retro_Mania\Models\DatabaseConnection.php:20
+Stack trace:
+#0 D:\Programmes\wamp64\www\Retro_Mania\Models\DatabaseConnection.php(20): PDO->__construct('mysql:host=retr...', 'root', 'root')
+#1 D:\Programmes\wamp64\www\Retro_Mania\Models\DatabaseConnection.php(34): Models\DatabaseConnection->setDbCon()
+#2 D:\Programmes\wamp64\www\Retro_Mania\Models\Read.php(161): Models\DatabaseConnection->getDbCon()
+#3 D:\Programmes\wamp64\www\Retro_Mania\Models\Read.php(173): Models\Read->capsCatalogVisitors()
+#4 D:\Programmes\wamp64\www\Retro_Mania\Controller\Controller.php(269): Models\Read->readCapsCatalogVisitors()
+#5 D:\Programmes\wamp64\www\Retro_Mania\Controller\Controller.php(276): Controller\Controller->capsCatalogVisitors()
+#6 D:\Programmes\wamp64\www\Retro_Mania\index.php(91): Controller\Controller->displayCapsCatalogVisitors()
+#7 {main}26-10-2022 📅 15:02:23 ⏰
+PDOException: PDO::__construct(): php_network_getaddresses: getaddrinfo failed: H�te inconnu.  in D:\Programmes\wamp64\www\Retro_Mania\Models\DatabaseConnection.php:20
+Stack trace:
+#0 D:\Programmes\wamp64\www\Retro_Mania\Models\DatabaseConnection.php(20): PDO->__construct('mysql:host=retr...', 'root', 'root')
+#1 D:\Programmes\wamp64\www\Retro_Mania\Models\DatabaseConnection.php(34): Models\DatabaseConnection->setDbCon()
+#2 D:\Programmes\wamp64\www\Retro_Mania\Models\Read.php(161): Models\DatabaseConnection->getDbCon()
+#3 D:\Programmes\wamp64\www\Retro_Mania\Models\Read.php(173): Models\Read->capsCatalogVisitors()
+#4 D:\Programmes\wamp64\www\Retro_Mania\Controller\Controller.php(269): Models\Read->readCapsCatalogVisitors()
+#5 D:\Programmes\wamp64\www\Retro_Mania\Controller\Controller.php(276): Controller\Controller->capsCatalogVisitors()
+#6 D:\Programmes\wamp64\www\Retro_Mania\index.php(91): Controller\Controller->displayCapsCatalogVisitors()
+#7 {main}
+
+Next PDOException: SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: H�te inconnu.  in D:\Programmes\wamp64\www\Retro_Mania\Models\DatabaseConnection.php:20
+Stack trace:
+#0 D:\Programmes\wamp64\www\Retro_Mania\Models\DatabaseConnection.php(20): PDO->__construct('mysql:host=retr...', 'root', 'root')
+#1 D:\Programmes\wamp64\www\Retro_Mania\Models\DatabaseConnection.php(34): Models\DatabaseConnection->setDbCon()
+#2 D:\Programmes\wamp64\www\Retro_Mania\Models\Read.php(161): Models\DatabaseConnection->getDbCon()
+#3 D:\Programmes\wamp64\www\Retro_Mania\Models\Read.php(173): Models\Read->capsCatalogVisitors()
+#4 D:\Programmes\wamp64\www\Retro_Mania\Controller\Controller.php(269): Models\Read->readCapsCatalogVisitors()
+#5 D:\Programmes\wamp64\www\Retro_Mania\Controller\Controller.php(276): Controller\Controller->capsCatalogVisitors()
+#6 D:\Programmes\wamp64\www\Retro_Mania\index.php(91): Controller\Controller->displayCapsCatalogVisitors()
+#7 {main}26-10-2022 📅 15:02:27 ⏰
+PDOException: PDO::__construct(): php_network_getaddresses: getaddrinfo failed: H�te inconnu.  in D:\Programmes\wamp64\www\Retro_Mania\Models\DatabaseConnection.php:20
+Stack trace:
+#0 D:\Programmes\wamp64\www\Retro_Mania\Models\DatabaseConnection.php(20): PDO->__construct('mysql:host=loca...', 'root', 'root')
+#1 D:\Programmes\wamp64\www\Retro_Mania\Models\DatabaseConnection.php(34): Models\DatabaseConnection->setDbCon()
+#2 D:\Programmes\wamp64\www\Retro_Mania\Models\Read.php(161): Models\DatabaseConnection->getDbCon()
+#3 D:\Programmes\wamp64\www\Retro_Mania\Models\Read.php(173): Models\Read->capsCatalogVisitors()
+#4 D:\Programmes\wamp64\www\Retro_Mania\Controller\Controller.php(269): Models\Read->readCapsCatalogVisitors()
+#5 D:\Programmes\wamp64\www\Retro_Mania\Controller\Controller.php(276): Controller\Controller->capsCatalogVisitors()
+#6 D:\Programmes\wamp64\www\Retro_Mania\index.php(91): Controller\Controller->displayCapsCatalogVisitors()
+#7 {main}
+
+Next PDOException: SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: H�te inconnu.  in D:\Programmes\wamp64\www\Retro_Mania\Models\DatabaseConnection.php:20
+Stack trace:
+#0 D:\Programmes\wamp64\www\Retro_Mania\Models\DatabaseConnection.php(20): PDO->__construct('mysql:host=loca...', 'root', 'root')
+#1 D:\Programmes\wamp64\www\Retro_Mania\Models\DatabaseConnection.php(34): Models\DatabaseConnection->setDbCon()
+#2 D:\Programmes\wamp64\www\Retro_Mania\Models\Read.php(161): Models\DatabaseConnection->getDbCon()
+#3 D:\Programmes\wamp64\www\Retro_Mania\Models\Read.php(173): Models\Read->capsCatalogVisitors()
+#4 D:\Programmes\wamp64\www\Retro_Mania\Controller\Controller.php(269): Models\Read->readCapsCatalogVisitors()
+#5 D:\Programmes\wamp64\www\Retro_Mania\Controller\Controller.php(276): Controller\Controller->capsCatalogVisitors()
+#6 D:\Programmes\wamp64\www\Retro_Mania\index.php(91): Controller\Controller->displayCapsCatalogVisitors()
+#7 {main}26-10-2022 📅 15:02:53 ⏰
+PDOException: PDO::__construct(): php_network_getaddresses: getaddrinfo failed: H�te inconnu.  in D:\Programmes\wamp64\www\Retro_Mania\Models\DatabaseConnection.php:20
+Stack trace:
+#0 D:\Programmes\wamp64\www\Retro_Mania\Models\DatabaseConnection.php(20): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 D:\Programmes\wamp64\www\Retro_Mania\Models\DatabaseConnection.php(34): Models\DatabaseConnection->setDbCon()
+#2 D:\Programmes\wamp64\www\Retro_Mania\Models\Read.php(161): Models\DatabaseConnection->getDbCon()
+#3 D:\Programmes\wamp64\www\Retro_Mania\Models\Read.php(173): Models\Read->capsCatalogVisitors()
+#4 D:\Programmes\wamp64\www\Retro_Mania\Controller\Controller.php(269): Models\Read->readCapsCatalogVisitors()
+#5 D:\Programmes\wamp64\www\Retro_Mania\Controller\Controller.php(276): Controller\Controller->capsCatalogVisitors()
+#6 D:\Programmes\wamp64\www\Retro_Mania\index.php(91): Controller\Controller->displayCapsCatalogVisitors()
+#7 {main}
+
+Next PDOException: SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: H�te inconnu.  in D:\Programmes\wamp64\www\Retro_Mania\Models\DatabaseConnection.php:20
+Stack trace:
+#0 D:\Programmes\wamp64\www\Retro_Mania\Models\DatabaseConnection.php(20): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 D:\Programmes\wamp64\www\Retro_Mania\Models\DatabaseConnection.php(34): Models\DatabaseConnection->setDbCon()
+#2 D:\Programmes\wamp64\www\Retro_Mania\Models\Read.php(161): Models\DatabaseConnection->getDbCon()
+#3 D:\Programmes\wamp64\www\Retro_Mania\Models\Read.php(173): Models\Read->capsCatalogVisitors()
+#4 D:\Programmes\wamp64\www\Retro_Mania\Controller\Controller.php(269): Models\Read->readCapsCatalogVisitors()
+#5 D:\Programmes\wamp64\www\Retro_Mania\Controller\Controller.php(276): Controller\Controller->capsCatalogVisitors()
+#6 D:\Programmes\wamp64\www\Retro_Mania\index.php(91): Controller\Controller->displayCapsCatalogVisitors()
+#7 {main}26-10-2022 📅 15:03:06 ⏰
+PDOException: PDO::__construct(): php_network_getaddresses: getaddrinfo failed: H�te inconnu.  in D:\Programmes\wamp64\www\Retro_Mania\Models\DatabaseConnection.php:20
+Stack trace:
+#0 D:\Programmes\wamp64\www\Retro_Mania\Models\DatabaseConnection.php(20): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 D:\Programmes\wamp64\www\Retro_Mania\Models\DatabaseConnection.php(34): Models\DatabaseConnection->setDbCon()
+#2 D:\Programmes\wamp64\www\Retro_Mania\Models\Read.php(200): Models\DatabaseConnection->getDbCon()
+#3 D:\Programmes\wamp64\www\Retro_Mania\Models\Read.php(212): Models\Read->commentsVisitors()
+#4 D:\Programmes\wamp64\www\Retro_Mania\Controller\Controller.php(314): Models\Read->readCommentsVisitors()
+#5 D:\Programmes\wamp64\www\Retro_Mania\Controller\Controller.php(323): Controller\Controller->onlineGuestBook()
+#6 D:\Programmes\wamp64\www\Retro_Mania\index.php(103): Controller\Controller->displayOnlineGuestBook()
+#7 {main}
+
+Next PDOException: SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: H�te inconnu.  in D:\Programmes\wamp64\www\Retro_Mania\Models\DatabaseConnection.php:20
+Stack trace:
+#0 D:\Programmes\wamp64\www\Retro_Mania\Models\DatabaseConnection.php(20): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 D:\Programmes\wamp64\www\Retro_Mania\Models\DatabaseConnection.php(34): Models\DatabaseConnection->setDbCon()
+#2 D:\Programmes\wamp64\www\Retro_Mania\Models\Read.php(200): Models\DatabaseConnection->getDbCon()
+#3 D:\Programmes\wamp64\www\Retro_Mania\Models\Read.php(212): Models\Read->commentsVisitors()
+#4 D:\Programmes\wamp64\www\Retro_Mania\Controller\Controller.php(314): Models\Read->readCommentsVisitors()
+#5 D:\Programmes\wamp64\www\Retro_Mania\Controller\Controller.php(323): Controller\Controller->onlineGuestBook()
+#6 D:\Programmes\wamp64\www\Retro_Mania\index.php(103): Controller\Controller->displayOnlineGuestBook()
+#7 {main}26-10-2022 📅 15:03:10 ⏰
+PDOException: SQLSTATE[HY000] [2002] Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée.
+ in D:\Programmes\wamp64\www\Retro_Mania\Models\DatabaseConnection.php:20
+Stack trace:
+#0 D:\Programmes\wamp64\www\Retro_Mania\Models\DatabaseConnection.php(20): PDO->__construct('mysql:host=retr...', 'root', 'root')
+#1 D:\Programmes\wamp64\www\Retro_Mania\Models\DatabaseConnection.php(34): Models\DatabaseConnection->setDbCon()
+#2 D:\Programmes\wamp64\www\Retro_Mania\Models\Read.php(161): Models\DatabaseConnection->getDbCon()
+#3 D:\Programmes\wamp64\www\Retro_Mania\Models\Read.php(173): Models\Read->capsCatalogVisitors()
+#4 D:\Programmes\wamp64\www\Retro_Mania\Controller\Controller.php(269): Models\Read->readCapsCatalogVisitors()
+#5 D:\Programmes\wamp64\www\Retro_Mania\Controller\Controller.php(276): Controller\Controller->capsCatalogVisitors()
+#6 D:\Programmes\wamp64\www\Retro_Mania\index.php(91): Controller\Controller->displayCapsCatalogVisitors()
+#7 {main}26-10-2022 📅 15:04:31 ⏰
+PDOException: SQLSTATE[HY000] [2002] Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée.
+ in D:\Programmes\wamp64\www\Retro_Mania\Models\DatabaseConnection.php:20
+Stack trace:
+#0 D:\Programmes\wamp64\www\Retro_Mania\Models\DatabaseConnection.php(20): PDO->__construct('mysql:host=retr...', 'root', 'root')
+#1 D:\Programmes\wamp64\www\Retro_Mania\Models\DatabaseConnection.php(34): Models\DatabaseConnection->setDbCon()
+#2 D:\Programmes\wamp64\www\Retro_Mania\Models\Read.php(161): Models\DatabaseConnection->getDbCon()
+#3 D:\Programmes\wamp64\www\Retro_Mania\Models\Read.php(173): Models\Read->capsCatalogVisitors()
+#4 D:\Programmes\wamp64\www\Retro_Mania\Controller\Controller.php(269): Models\Read->readCapsCatalogVisitors()
+#5 D:\Programmes\wamp64\www\Retro_Mania\Controller\Controller.php(276): Controller\Controller->capsCatalogVisitors()
+#6 D:\Programmes\wamp64\www\Retro_Mania\index.php(91): Controller\Controller->displayCapsCatalogVisitors()
+#7 {main}26-10-2022 📅 15:04:33 ⏰
+PDOException: SQLSTATE[HY000] [2002] Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée.
+ in D:\Programmes\wamp64\www\Retro_Mania\Models\DatabaseConnection.php:20
+Stack trace:
+#0 D:\Programmes\wamp64\www\Retro_Mania\Models\DatabaseConnection.php(20): PDO->__construct('mysql:host=retr...', 'root', 'root')
+#1 D:\Programmes\wamp64\www\Retro_Mania\Models\DatabaseConnection.php(34): Models\DatabaseConnection->setDbCon()
+#2 D:\Programmes\wamp64\www\Retro_Mania\Models\Read.php(161): Models\DatabaseConnection->getDbCon()
+#3 D:\Programmes\wamp64\www\Retro_Mania\Models\Read.php(173): Models\Read->capsCatalogVisitors()
+#4 D:\Programmes\wamp64\www\Retro_Mania\Controller\Controller.php(269): Models\Read->readCapsCatalogVisitors()
+#5 D:\Programmes\wamp64\www\Retro_Mania\Controller\Controller.php(276): Controller\Controller->capsCatalogVisitors()
+#6 D:\Programmes\wamp64\www\Retro_Mania\index.php(91): Controller\Controller->displayCapsCatalogVisitors()
+#7 {main}26-10-2022 📅 15:04:37 ⏰
+PDOException: SQLSTATE[HY000] [2002] Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée.
+ in D:\Programmes\wamp64\www\Retro_Mania\Models\DatabaseConnection.php:20
+Stack trace:
+#0 D:\Programmes\wamp64\www\Retro_Mania\Models\DatabaseConnection.php(20): PDO->__construct('mysql:host=retr...', 'root', 'root')
+#1 D:\Programmes\wamp64\www\Retro_Mania\Models\DatabaseConnection.php(34): Models\DatabaseConnection->setDbCon()
+#2 D:\Programmes\wamp64\www\Retro_Mania\Models\Read.php(161): Models\DatabaseConnection->getDbCon()
+#3 D:\Programmes\wamp64\www\Retro_Mania\Models\Read.php(173): Models\Read->capsCatalogVisitors()
+#4 D:\Programmes\wamp64\www\Retro_Mania\Controller\Controller.php(269): Models\Read->readCapsCatalogVisitors()
+#5 D:\Programmes\wamp64\www\Retro_Mania\Controller\Controller.php(276): Controller\Controller->capsCatalogVisitors()
+#6 D:\Programmes\wamp64\www\Retro_Mania\index.php(91): Controller\Controller->displayCapsCatalogVisitors()
+#7 {main}26-10-2022 📅 15:06:55 ⏰
+PDOException: SQLSTATE[HY000] [2002] Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée.
+ in D:\Programmes\wamp64\www\Retro_Mania\Models\DatabaseConnection.php:20
+Stack trace:
+#0 D:\Programmes\wamp64\www\Retro_Mania\Models\DatabaseConnection.php(20): PDO->__construct('mysql:host=retr...', 'root', '')
+#1 D:\Programmes\wamp64\www\Retro_Mania\Models\DatabaseConnection.php(34): Models\DatabaseConnection->setDbCon()
+#2 D:\Programmes\wamp64\www\Retro_Mania\Models\Read.php(161): Models\DatabaseConnection->getDbCon()
+#3 D:\Programmes\wamp64\www\Retro_Mania\Models\Read.php(173): Models\Read->capsCatalogVisitors()
+#4 D:\Programmes\wamp64\www\Retro_Mania\Controller\Controller.php(269): Models\Read->readCapsCatalogVisitors()
+#5 D:\Programmes\wamp64\www\Retro_Mania\Controller\Controller.php(276): Controller\Controller->capsCatalogVisitors()
+#6 D:\Programmes\wamp64\www\Retro_Mania\index.php(91): Controller\Controller->displayCapsCatalogVisitors()
+#7 {main}26-10-2022 📅 15:07:23 ⏰
+PDOException: SQLSTATE[HY000] [2002] Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée.
+ in D:\Programmes\wamp64\www\Retro_Mania\Models\DatabaseConnection.php:20
+Stack trace:
+#0 D:\Programmes\wamp64\www\Retro_Mania\Models\DatabaseConnection.php(20): PDO->__construct('mysql:host=retr...', 'root', '')
+#1 D:\Programmes\wamp64\www\Retro_Mania\Models\DatabaseConnection.php(34): Models\DatabaseConnection->setDbCon()
+#2 D:\Programmes\wamp64\www\Retro_Mania\Models\Read.php(161): Models\DatabaseConnection->getDbCon()
+#3 D:\Programmes\wamp64\www\Retro_Mania\Models\Read.php(173): Models\Read->capsCatalogVisitors()
+#4 D:\Programmes\wamp64\www\Retro_Mania\Controller\Controller.php(269): Models\Read->readCapsCatalogVisitors()
+#5 D:\Programmes\wamp64\www\Retro_Mania\Controller\Controller.php(276): Controller\Controller->capsCatalogVisitors()
+#6 D:\Programmes\wamp64\www\Retro_Mania\index.php(91): Controller\Controller->displayCapsCatalogVisitors()
+#7 {main}26-10-2022 📅 15:08:31 ⏰
+PDOException: SQLSTATE[HY000] [2002] Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée.
+ in D:\Programmes\wamp64\www\Retro_Mania\Models\DatabaseConnection.php:20
+Stack trace:
+#0 D:\Programmes\wamp64\www\Retro_Mania\Models\DatabaseConnection.php(20): PDO->__construct('mysql:host=retr...', 'root', '')
+#1 D:\Programmes\wamp64\www\Retro_Mania\Models\DatabaseConnection.php(34): Models\DatabaseConnection->setDbCon()
+#2 D:\Programmes\wamp64\www\Retro_Mania\Models\Read.php(161): Models\DatabaseConnection->getDbCon()
+#3 D:\Programmes\wamp64\www\Retro_Mania\Models\Read.php(173): Models\Read->capsCatalogVisitors()
+#4 D:\Programmes\wamp64\www\Retro_Mania\Controller\Controller.php(269): Models\Read->readCapsCatalogVisitors()
+#5 D:\Programmes\wamp64\www\Retro_Mania\Controller\Controller.php(276): Controller\Controller->capsCatalogVisitors()
+#6 D:\Programmes\wamp64\www\Retro_Mania\index.php(91): Controller\Controller->displayCapsCatalogVisitors()
+#7 {main}26-10-2022 📅 15:08:36 ⏰
+PDOException: SQLSTATE[HY000] [2002] Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée.
+ in D:\Programmes\wamp64\www\Retro_Mania\Models\DatabaseConnection.php:20
+Stack trace:
+#0 D:\Programmes\wamp64\www\Retro_Mania\Models\DatabaseConnection.php(20): PDO->__construct('mysql:host=retr...', 'root', '')
+#1 D:\Programmes\wamp64\www\Retro_Mania\Models\DatabaseConnection.php(34): Models\DatabaseConnection->setDbCon()
+#2 D:\Programmes\wamp64\www\Retro_Mania\Models\Read.php(200): Models\DatabaseConnection->getDbCon()
+#3 D:\Programmes\wamp64\www\Retro_Mania\Models\Read.php(212): Models\Read->commentsVisitors()
+#4 D:\Programmes\wamp64\www\Retro_Mania\Controller\Controller.php(314): Models\Read->readCommentsVisitors()
+#5 D:\Programmes\wamp64\www\Retro_Mania\Controller\Controller.php(323): Controller\Controller->onlineGuestBook()
+#6 D:\Programmes\wamp64\www\Retro_Mania\index.php(103): Controller\Controller->displayOnlineGuestBook()
+#7 {main}26-10-2022 📅 15:09:10 ⏰
+PDOException: SQLSTATE[HY000] [2002] Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée.
+ in D:\Programmes\wamp64\www\Retro_Mania\Models\DatabaseConnection.php:20
+Stack trace:
+#0 D:\Programmes\wamp64\www\Retro_Mania\Models\DatabaseConnection.php(20): PDO->__construct('mysql:host=retr...', 'root', '')
+#1 D:\Programmes\wamp64\www\Retro_Mania\Models\DatabaseConnection.php(34): Models\DatabaseConnection->setDbCon()
+#2 D:\Programmes\wamp64\www\Retro_Mania\Models\Read.php(161): Models\DatabaseConnection->getDbCon()
+#3 D:\Programmes\wamp64\www\Retro_Mania\Models\Read.php(173): Models\Read->capsCatalogVisitors()
+#4 D:\Programmes\wamp64\www\Retro_Mania\Controller\Controller.php(269): Models\Read->readCapsCatalogVisitors()
+#5 D:\Programmes\wamp64\www\Retro_Mania\Controller\Controller.php(276): Controller\Controller->capsCatalogVisitors()
+#6 D:\Programmes\wamp64\www\Retro_Mania\index.php(91): Controller\Controller->displayCapsCatalogVisitors()
+#7 {main}26-10-2022 📅 15:09:12 ⏰
+PDOException: SQLSTATE[HY000] [2002] Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée.
+ in D:\Programmes\wamp64\www\Retro_Mania\Models\DatabaseConnection.php:20
+Stack trace:
+#0 D:\Programmes\wamp64\www\Retro_Mania\Models\DatabaseConnection.php(20): PDO->__construct('mysql:host=retr...', 'root', '')
+#1 D:\Programmes\wamp64\www\Retro_Mania\Models\DatabaseConnection.php(34): Models\DatabaseConnection->setDbCon()
+#2 D:\Programmes\wamp64\www\Retro_Mania\Models\Read.php(161): Models\DatabaseConnection->getDbCon()
+#3 D:\Programmes\wamp64\www\Retro_Mania\Models\Read.php(173): Models\Read->capsCatalogVisitors()
+#4 D:\Programmes\wamp64\www\Retro_Mania\Controller\Controller.php(269): Models\Read->readCapsCatalogVisitors()
+#5 D:\Programmes\wamp64\www\Retro_Mania\Controller\Controller.php(276): Controller\Controller->capsCatalogVisitors()
+#6 D:\Programmes\wamp64\www\Retro_Mania\index.php(91): Controller\Controller->displayCapsCatalogVisitors()
+#7 {main}26-10-2022 📅 15:11:16 ⏰
+PDOException: SQLSTATE[HY000] [2002] Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée.
+ in D:\Programmes\wamp64\www\Retro_Mania\Models\DatabaseConnection.php:20
+Stack trace:
+#0 D:\Programmes\wamp64\www\Retro_Mania\Models\DatabaseConnection.php(20): PDO->__construct('mysql:host=retr...', 'root', '')
+#1 D:\Programmes\wamp64\www\Retro_Mania\Models\DatabaseConnection.php(34): Models\DatabaseConnection->setDbCon()
+#2 D:\Programmes\wamp64\www\Retro_Mania\Models\Read.php(161): Models\DatabaseConnection->getDbCon()
+#3 D:\Programmes\wamp64\www\Retro_Mania\Models\Read.php(173): Models\Read->capsCatalogVisitors()
+#4 D:\Programmes\wamp64\www\Retro_Mania\Controller\Controller.php(269): Models\Read->readCapsCatalogVisitors()
+#5 D:\Programmes\wamp64\www\Retro_Mania\Controller\Controller.php(276): Controller\Controller->capsCatalogVisitors()
+#6 D:\Programmes\wamp64\www\Retro_Mania\index.php(91): Controller\Controller->displayCapsCatalogVisitors()
+#7 {main}26-10-2022 📅 15:11:17 ⏰
+PDOException: SQLSTATE[HY000] [2002] Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée.
+ in D:\Programmes\wamp64\www\Retro_Mania\Models\DatabaseConnection.php:20
+Stack trace:
+#0 D:\Programmes\wamp64\www\Retro_Mania\Models\DatabaseConnection.php(20): PDO->__construct('mysql:host=retr...', 'root', '')
+#1 D:\Programmes\wamp64\www\Retro_Mania\Models\DatabaseConnection.php(34): Models\DatabaseConnection->setDbCon()
+#2 D:\Programmes\wamp64\www\Retro_Mania\Models\Read.php(161): Models\DatabaseConnection->getDbCon()
+#3 D:\Programmes\wamp64\www\Retro_Mania\Models\Read.php(173): Models\Read->capsCatalogVisitors()
+#4 D:\Programmes\wamp64\www\Retro_Mania\Controller\Controller.php(269): Models\Read->readCapsCatalogVisitors()
+#5 D:\Programmes\wamp64\www\Retro_Mania\Controller\Controller.php(276): Controller\Controller->capsCatalogVisitors()
+#6 D:\Programmes\wamp64\www\Retro_Mania\index.php(91): Controller\Controller->displayCapsCatalogVisitors()
+#7 {main}26-10-2022 📅 15:11:17 ⏰
+PDOException: SQLSTATE[HY000] [2002] Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée.
+ in D:\Programmes\wamp64\www\Retro_Mania\Models\DatabaseConnection.php:20
+Stack trace:
+#0 D:\Programmes\wamp64\www\Retro_Mania\Models\DatabaseConnection.php(20): PDO->__construct('mysql:host=retr...', 'root', '16.miRO47.7r')
+#1 D:\Programmes\wamp64\www\Retro_Mania\Models\DatabaseConnection.php(34): Models\DatabaseConnection->setDbCon()
+#2 D:\Programmes\wamp64\www\Retro_Mania\Models\Read.php(200): Models\DatabaseConnection->getDbCon()
+#3 D:\Programmes\wamp64\www\Retro_Mania\Models\Read.php(212): Models\Read->commentsVisitors()
+#4 D:\Programmes\wamp64\www\Retro_Mania\Controller\Controller.php(314): Models\Read->readCommentsVisitors()
+#5 D:\Programmes\wamp64\www\Retro_Mania\Controller\Controller.php(323): Controller\Controller->onlineGuestBook()
+#6 D:\Programmes\wamp64\www\Retro_Mania\index.php(103): Controller\Controller->displayOnlineGuestBook()
+#7 {main}26-10-2022 📅 15:20:49 ⏰
+PDOException: SQLSTATE[HY000] [2002] Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée.
+ in D:\Programmes\wamp64\www\Retro_Mania\Models\DatabaseConnection.php:20
+Stack trace:
+#0 D:\Programmes\wamp64\www\Retro_Mania\Models\DatabaseConnection.php(20): PDO->__construct('mysql:host=retr...', 'root', '16.miRO47.7r')
+#1 D:\Programmes\wamp64\www\Retro_Mania\Models\DatabaseConnection.php(34): Models\DatabaseConnection->setDbCon()
+#2 D:\Programmes\wamp64\www\Retro_Mania\Models\Read.php(161): Models\DatabaseConnection->getDbCon()
+#3 D:\Programmes\wamp64\www\Retro_Mania\Models\Read.php(173): Models\Read->capsCatalogVisitors()
+#4 D:\Programmes\wamp64\www\Retro_Mania\Controller\Controller.php(269): Models\Read->readCapsCatalogVisitors()
+#5 D:\Programmes\wamp64\www\Retro_Mania\Controller\Controller.php(276): Controller\Controller->capsCatalogVisitors()
+#6 D:\Programmes\wamp64\www\Retro_Mania\index.php(91): Controller\Controller->displayCapsCatalogVisitors()
+#7 {main}26-10-2022 📅 15:24:09 ⏰
+PDOException: SQLSTATE[HY000] [2002] Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée.
+ in D:\Programmes\wamp64\www\Retro_Mania\Models\DatabaseConnection.php:20
+Stack trace:
+#0 D:\Programmes\wamp64\www\Retro_Mania\Models\DatabaseConnection.php(20): PDO->__construct('mysql:host=loca...', 'root', '16.miRO47.7r')
+#1 D:\Programmes\wamp64\www\Retro_Mania\Models\DatabaseConnection.php(34): Models\DatabaseConnection->setDbCon()
+#2 D:\Programmes\wamp64\www\Retro_Mania\Models\Read.php(161): Models\DatabaseConnection->getDbCon()
+#3 D:\Programmes\wamp64\www\Retro_Mania\Models\Read.php(173): Models\Read->capsCatalogVisitors()
+#4 D:\Programmes\wamp64\www\Retro_Mania\Controller\Controller.php(269): Models\Read->readCapsCatalogVisitors()
+#5 D:\Programmes\wamp64\www\Retro_Mania\Controller\Controller.php(276): Controller\Controller->capsCatalogVisitors()
+#6 D:\Programmes\wamp64\www\Retro_Mania\index.php(91): Controller\Controller->displayCapsCatalogVisitors()
+#7 {main}26-10-2022 📅 15:26:20 ⏰
+PDOException: SQLSTATE[HY000] [1045] Accès refusé pour l'utilisateur: 'mel'@'localhost' (mot de passe: OUI) in D:\Programmes\wamp64\www\Retro_Mania\Models\DatabaseConnection.php:20
+Stack trace:
+#0 D:\Programmes\wamp64\www\Retro_Mania\Models\DatabaseConnection.php(20): PDO->__construct('mysql:host=retr...', 'mel', 'ch.LOOD2.T38')
+#1 D:\Programmes\wamp64\www\Retro_Mania\Models\DatabaseConnection.php(34): Models\DatabaseConnection->setDbCon()
+#2 D:\Programmes\wamp64\www\Retro_Mania\Models\Read.php(200): Models\DatabaseConnection->getDbCon()
+#3 D:\Programmes\wamp64\www\Retro_Mania\Models\Read.php(212): Models\Read->commentsVisitors()
+#4 D:\Programmes\wamp64\www\Retro_Mania\Controller\Controller.php(314): Models\Read->readCommentsVisitors()
+#5 D:\Programmes\wamp64\www\Retro_Mania\Controller\Controller.php(323): Controller\Controller->onlineGuestBook()
+#6 D:\Programmes\wamp64\www\Retro_Mania\index.php(103): Controller\Controller->displayOnlineGuestBook()
+#7 {main}26-10-2022 📅 15:45:48 ⏰
+PDOException: SQLSTATE[HY000] [1045] Accès refusé pour l'utilisateur: 'mel'@'localhost' (mot de passe: OUI) in D:\Programmes\wamp64\www\Retro_Mania\Models\DatabaseConnection.php:20
+Stack trace:
+#0 D:\Programmes\wamp64\www\Retro_Mania\Models\DatabaseConnection.php(20): PDO->__construct('mysql:host=retr...', 'mel', 'ch.LOOD2.T38')
+#1 D:\Programmes\wamp64\www\Retro_Mania\Models\DatabaseConnection.php(34): Models\DatabaseConnection->setDbCon()
+#2 D:\Programmes\wamp64\www\Retro_Mania\Models\Read.php(161): Models\DatabaseConnection->getDbCon()
+#3 D:\Programmes\wamp64\www\Retro_Mania\Models\Read.php(173): Models\Read->capsCatalogVisitors()
+#4 D:\Programmes\wamp64\www\Retro_Mania\Controller\Controller.php(269): Models\Read->readCapsCatalogVisitors()
+#5 D:\Programmes\wamp64\www\Retro_Mania\Controller\Controller.php(276): Controller\Controller->capsCatalogVisitors()
+#6 D:\Programmes\wamp64\www\Retro_Mania\index.php(91): Controller\Controller->displayCapsCatalogVisitors()
+#7 {main}26-10-2022 📅 15:45:56 ⏰
+PDOException: SQLSTATE[HY000] [1045] Accès refusé pour l'utilisateur: 'mel'@'localhost' (mot de passe: OUI) in D:\Programmes\wamp64\www\Retro_Mania\Models\DatabaseConnection.php:20
+Stack trace:
+#0 D:\Programmes\wamp64\www\Retro_Mania\Models\DatabaseConnection.php(20): PDO->__construct('mysql:host=retr...', 'mel', 'ch.LOOD2.T38')
+#1 D:\Programmes\wamp64\www\Retro_Mania\Models\DatabaseConnection.php(34): Models\DatabaseConnection->setDbCon()
+#2 D:\Programmes\wamp64\www\Retro_Mania\Models\Read.php(161): Models\DatabaseConnection->getDbCon()
+#3 D:\Programmes\wamp64\www\Retro_Mania\Models\Read.php(173): Models\Read->capsCatalogVisitors()
+#4 D:\Programmes\wamp64\www\Retro_Mania\Controller\Controller.php(269): Models\Read->readCapsCatalogVisitors()
+#5 D:\Programmes\wamp64\www\Retro_Mania\Controller\Controller.php(276): Controller\Controller->capsCatalogVisitors()
+#6 D:\Programmes\wamp64\www\Retro_Mania\index.php(91): Controller\Controller->displayCapsCatalogVisitors()
+#7 {main}26-10-2022 📅 15:53:52 ⏰
+PDOException: SQLSTATE[HY000] [1045] Accès refusé pour l'utilisateur: 'mel'@'localhost' (mot de passe: OUI) in D:\Programmes\wamp64\www\Retro_Mania\Models\DatabaseConnection.php:20
+Stack trace:
+#0 D:\Programmes\wamp64\www\Retro_Mania\Models\DatabaseConnection.php(20): PDO->__construct('mysql:host=retr...', 'mel', 'ch.LOOD2.T38')
+#1 D:\Programmes\wamp64\www\Retro_Mania\Models\DatabaseConnection.php(34): Models\DatabaseConnection->setDbCon()
+#2 D:\Programmes\wamp64\www\Retro_Mania\Models\Read.php(161): Models\DatabaseConnection->getDbCon()
+#3 D:\Programmes\wamp64\www\Retro_Mania\Models\Read.php(173): Models\Read->capsCatalogVisitors()
+#4 D:\Programmes\wamp64\www\Retro_Mania\Controller\Controller.php(269): Models\Read->readCapsCatalogVisitors()
+#5 D:\Programmes\wamp64\www\Retro_Mania\Controller\Controller.php(276): Controller\Controller->capsCatalogVisitors()
+#6 D:\Programmes\wamp64\www\Retro_Mania\index.php(91): Controller\Controller->displayCapsCatalogVisitors()
+#7 {main}26-10-2022 📅 15:56:00 ⏰
+PDOException: SQLSTATE[HY000] [1045] Accès refusé pour l'utilisateur: 'mel'@'localhost' (mot de passe: OUI) in D:\Programmes\wamp64\www\Retro_Mania\Models\DatabaseConnection.php:20
+Stack trace:
+#0 D:\Programmes\wamp64\www\Retro_Mania\Models\DatabaseConnection.php(20): PDO->__construct('mysql:host=retr...', 'mel', 'ch.LOOD2.T38')
+#1 D:\Programmes\wamp64\www\Retro_Mania\Models\DatabaseConnection.php(34): Models\DatabaseConnection->setDbCon()
+#2 D:\Programmes\wamp64\www\Retro_Mania\Models\Read.php(161): Models\DatabaseConnection->getDbCon()
+#3 D:\Programmes\wamp64\www\Retro_Mania\Models\Read.php(173): Models\Read->capsCatalogVisitors()
+#4 D:\Programmes\wamp64\www\Retro_Mania\Controller\Controller.php(269): Models\Read->readCapsCatalogVisitors()
+#5 D:\Programmes\wamp64\www\Retro_Mania\Controller\Controller.php(276): Controller\Controller->capsCatalogVisitors()
+#6 D:\Programmes\wamp64\www\Retro_Mania\index.php(91): Controller\Controller->displayCapsCatalogVisitors()
+#7 {main}26-10-2022 📅 15:56:01 ⏰
+=======
+#7 {main}27-10-2022 📅 00:28:44 ⏰
+>>>>>>> fcf3b4a (Last version)
+PDOException: SQLSTATE[HY000] [2002] Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée in D:\Programmes\wamp64\www\Retro_Mania\Models\DatabaseConnection.php:20
+Stack trace:
+#0 D:\Programmes\wamp64\www\Retro_Mania\Models\DatabaseConnection.php(20): PDO->__construct('mysql:host=retr...', 'mel', 'ch.LOOD2.t38')
+#1 D:\Programmes\wamp64\www\Retro_Mania\Models\DatabaseConnection.php(34): Models\DatabaseConnection->setDbCon()
+#2 D:\Programmes\wamp64\www\Retro_Mania\Models\Read.php(18): Models\DatabaseConnection->getDbCon()
+#3 D:\Programmes\wamp64\www\Retro_Mania\Models\Read.php(37): Models\Read->readAdminAccount('adminMel33', '16.miRO47.7r')
+#4 D:\Programmes\wamp64\www\Retro_Mania\Controller\Controller.php(91): Models\Read->readCurrentAdminAccount('adminMel33', '16.miRO47.7r')
+#5 D:\Programmes\wamp64\www\Retro_Mania\Controller\Controller.php(96): Controller\Controller->readAdmin()
+#6 D:\Programmes\wamp64\www\Retro_Mania\index.php(31): Controller\Controller->readCurrentAdmin()
+#7 {main}27-10-2022 📅 16:17:08 ⏰
+PDOException: SQLSTATE[HY000] [2002] Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée in D:\Programmes\wamp64\www\Retro_Mania\Models\DatabaseConnection.php:20
+Stack trace:
+#0 D:\Programmes\wamp64\www\Retro_Mania\Models\DatabaseConnection.php(20): PDO->__construct('mysql:host=retr...', 'mel', 'ch.LOOD2.t38')
+#1 D:\Programmes\wamp64\www\Retro_Mania\Models\DatabaseConnection.php(34): Models\DatabaseConnection->setDbCon()
+#2 D:\Programmes\wamp64\www\Retro_Mania\Models\Read.php(161): Models\DatabaseConnection->getDbCon()
+#3 D:\Programmes\wamp64\www\Retro_Mania\Models\Read.php(173): Models\Read->capsCatalogVisitors()
+#4 D:\Programmes\wamp64\www\Retro_Mania\Controller\Controller.php(269): Models\Read->readCapsCatalogVisitors()
+#5 D:\Programmes\wamp64\www\Retro_Mania\Controller\Controller.php(276): Controller\Controller->capsCatalogVisitors()
+#6 D:\Programmes\wamp64\www\Retro_Mania\index.php(91): Controller\Controller->displayCapsCatalogVisitors()
+#7 {main}27-10-2022 📅 16:17:43 ⏰
+PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES) in C:\Users\mrous\OneDrive\Bureau\Retro_Mania\Models\DatabaseConnection.php:20
+Stack trace:
+#0 C:\Users\mrous\OneDrive\Bureau\Retro_Mania\Models\DatabaseConnection.php(20): PDO->__construct('mysql:host=retr...', 'root', '16.miRO47.7r')
+#1 C:\Users\mrous\OneDrive\Bureau\Retro_Mania\Models\DatabaseConnection.php(34): Models\DatabaseConnection->setDbCon()
+#2 C:\Users\mrous\OneDrive\Bureau\Retro_Mania\Models\Read.php(200): Models\DatabaseConnection->getDbCon()
+#3 C:\Users\mrous\OneDrive\Bureau\Retro_Mania\Models\Read.php(212): Models\Read->commentsVisitors()
+#4 C:\Users\mrous\OneDrive\Bureau\Retro_Mania\Controller\Controller.php(314): Models\Read->readCommentsVisitors()
+#5 C:\Users\mrous\OneDrive\Bureau\Retro_Mania\Controller\Controller.php(323): Controller\Controller->onlineGuestBook()
+#6 C:\Users\mrous\OneDrive\Bureau\Retro_Mania\index.php(103): Controller\Controller->displayOnlineGuestBook()
+#7 {main}17-11-2022 📅 14:10:22 ⏰
