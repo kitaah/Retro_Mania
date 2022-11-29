@@ -25,7 +25,6 @@ article,
 aside,
 footer,
 header,
-hgroup,
 nav,
 section {
     margin: 0;
@@ -369,14 +368,14 @@ footer .fa-brands {
     }
 }
 
-.site-home-top {
+.site-home__container {
     background-image: url("../medias/img/site/home/purple_mountain.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     padding: 5rem 0 30rem 0;
 }
 
-.site-home-top h1 {
+.site-home__container h1 {
     color: #feb6ff;
     font-size: 3.5rem;
     margin-bottom: 1.5rem;
@@ -499,7 +498,7 @@ footer .fa-brands {
     filter: brightness(90%);
 }
 
-.caps-catalog__content-details hgroup {
+.caps-catalog__content-details header {
     background-image: url("../medias/img/caps_collections/sky.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -1571,7 +1570,7 @@ footer .fa-brands {
 }
 
 @media only screen and (min-width: 1824px) {
-    .site-home-top {
+    .site-home__container {
         padding: 5rem 0 51rem 0;
     }
 
@@ -1684,11 +1683,11 @@ footer .fa-brands {
 
     /* SITE VIEWS */
     /* HOME PAGE */
-    .site-home-top {
+    .site-home__container {
         padding: 4rem 0 25rem 0;
     }
 
-    .site-home-top h1 {
+    .site-home__container h1 {
         font-size: 2.7rem;
         margin-bottom: 1.5rem;
     }
@@ -1729,7 +1728,7 @@ footer .fa-brands {
         width: 18rem;
     }
 
-    .caps-catalog__content-details hgroup {
+    .caps-catalog__content-details header {
         font-size: 1.3rem;
     }
 
@@ -2007,17 +2006,17 @@ footer .fa-brands {
 
     /* SITE VIEWS */
     /* HOME PAGE */
-    .site-home-top {
+    .site-home__container {
         background-image: url("../medias/img/site/home/purple_mountain_mobile.jpg");
         background-repeat: no-repeat;
         background-size: 100% 100%;
     }
 
-    .site-home-top {
+    .site-home__container {
         padding: 2.5rem 0 44.5rem 0;
     }
 
-    .site-home-top h1 {
+    .site-home__container h1 {
         font-size: 1.8rem;
         margin-bottom: 1.1rem;
     }
@@ -2060,7 +2059,7 @@ footer .fa-brands {
         width: 20rem;
     }
 
-    .caps-catalog__content-details hgroup {
+    .caps-catalog__content-details header {
         font-size: 1.2rem;
     }
 
