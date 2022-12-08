@@ -28,17 +28,17 @@
 
         <article id="forgot-searching-text">
             <h3>You forgot to type something ! 😵</h3>
-            <p><img class="sonic__img" src="medias/img/site/search_game/sonic.gif" alt="grumpy cat image" /></p>
+            <p><img class="sonic__img" src="medias/img/site/search_game/sonic.gif" alt="grumpy cat image"></p>
         </article>
 
         <article id="win-game-text">
             <h3>You win ! Click here 👉<a id="win-game-file" href="#" download><i class="fa-solid fa-trophy win-game-trophy"></i></a></h3>
-            <p><img class="win__img margin-auto" src="medias/img/site/search_game/win_game.jpg" alt="street fighter image" /></p>
+            <p><img class="win__img margin-auto" src="medias/img/site/search_game/win_game.jpg" alt="street fighter image"></p>
         </article>
 
         <article id="loose-game-text">
             <h3>You loose ! Try again ! 😘</h3>
-            <p><img class="loose__img margin-auto" src="medias/img/site/search_game/loose_game.jpg" alt="street fighter image" /></p>
+            <p><img class="loose__img margin-auto" src="medias/img/site/search_game/loose_game.jpg" alt="street fighter image"></p>
         </article>
     </section>
 </main>

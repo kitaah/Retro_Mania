@@ -23,7 +23,7 @@
         </article>
 
         <article id="audio-tape" class="margin-auto">
-            <p><img src="medias/img/site/legal/audio_tape.png" alt="audio-tape image" /></p>
+            <p><img src="medias/img/site/legal/audio_tape.png" alt="audio-tape image"></p>
         </article>
     </section>
 </main>

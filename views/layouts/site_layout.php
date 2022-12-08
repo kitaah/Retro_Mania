@@ -28,7 +28,7 @@ session_destroy();
                 <li><a href="index.php?page=caps_catalog"><i class="fa-solid fa-list header-list"></i></a></li>
                 <li><a href="index.php?page=about_us"><i class="fa-solid fa-circle-info header-info"></i></a></li>
                 <li>
-                    <p><img src="medias/img/layouts/retro_mania_logo.png" id="header-logo-desktop__image" alt="retro mania logo website" /></p>
+                    <p><img src="medias/img/layouts/retro_mania_logo.png" id="header-logo-desktop__image" alt="retro mania logo website"></p>
                 </li>
                 <li><a href="index.php?page=contact_us"><i class="fa-solid fa-at"></i></a></li>
                 <li><a href="index.php?page=search_game"><i class="fa-solid fa-gamepad"></i></a></li>
@@ -57,7 +57,7 @@ session_destroy();
                     </nav>
                 </li>
                 <li>
-                    <p><img src="medias/img/layouts/retro_mania_logo.png" id="header-logo-devices__img" alt="retro mania logo website" /></p>
+                    <p><img src="medias/img/layouts/retro_mania_logo.png" id="header-logo-devices__img" alt="retro mania logo website"></p>
                 </li>
             </ul>
         </nav>

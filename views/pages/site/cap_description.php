@@ -3,7 +3,7 @@
         <h1 class="h1-model text-center">Cap <span> descrip</span>tion</h1>
 
         <article class="cap-description__content flex-center margin-auto">
-            <p class="cap-description__content-details"><?php echo '<img class="cap-description__img" src="medias/img/caps_collections/caps_img/' . htmlspecialchars($this->cap["image"]) . '" alt="retro mania cap image"/>'; ?></p>
+            <p class="cap-description__content-details"><?php echo '<img class="cap-description__img" src="medias/img/caps_collections/caps_img/' . htmlspecialchars($this->cap["image"]) . '" alt="retro mania cap image">'; ?></p>
 
             <article class="cap-description__content-details">
                 <h2><?php echo htmlspecialchars(strtoupper($this->cap['name'])) ?></h2>

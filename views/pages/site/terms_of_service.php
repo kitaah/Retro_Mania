@@ -26,7 +26,7 @@
         </article>
 
         <article id="radio" class="margin-auto">
-            <p><img src="medias/img/site/legal/radio.png" alt="radio image" /></p>
+            <p><img src="medias/img/site/legal/radio.png" alt="radio image"></p>
         </article>
     </section>
 </main>

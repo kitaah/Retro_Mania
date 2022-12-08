@@ -8,7 +8,7 @@ $this->sessionOnlyAdmin();
         <h1 class="h1-model text-center">Cap <span> descrip</span>tion</h1>
 
         <article class="admin-cap-description__content flex-center margin-auto">
-            <p class="admin-cap-description__content-details"><?php echo '<img class="cap-description__img" src="medias/img/caps_collections/caps_img/' . htmlspecialchars($this->cap["image"]) . '" alt="retro mania cap image"/>'; ?></p>
+            <p class="admin-cap-description__content-details"><?php echo '<img class="cap-description__img" src="medias/img/caps_collections/caps_img/' . htmlspecialchars($this->cap["image"]) . '" alt="retro mania cap image">'; ?></p>
 
             <article class="admin-cap-description__content-details">
                 <h2><?php echo htmlspecialchars(strtoupper($this->cap['name'])) ?></h2>
@@ -20,7 +20,7 @@ $this->sessionOnlyAdmin();
                 <p class="admin-cap-description__content-details-collection_id"><i class="fa-solid fa-barcode"></i>Collection code: <?php echo htmlspecialchars($this->cap['collection_id']) ?></p>
             </article>
 
-            <p class="admin-cap-description__content-details-devices"><?php echo '<img class="cap-description__img" src="medias/img/caps_collections/caps_img/' . htmlspecialchars($this->cap["image"]) . '" alt="retro mania cap image"/>'; ?></p>
+            <p class="admin-cap-description__content-details-devices"><?php echo '<img class="cap-description__img" src="medias/img/caps_collections/caps_img/' . htmlspecialchars($this->cap["image"]) . '" alt="retro mania cap image">'; ?></p>
 
             <article class="admin-cap-description__content-details-devices">
                 <h2><?php echo htmlspecialchars(strtoupper($this->cap['name'])) ?></h2>

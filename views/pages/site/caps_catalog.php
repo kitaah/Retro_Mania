@@ -13,6 +13,6 @@
             <?php endforeach; ?>
         </article>
 
-        <p><img src="medias/img/caps_collections/akira_motorbike.png" id="akira-motorbike__img" alt="akira motorbike image" /></p>
+        <p><img src="medias/img/caps_collections/akira_motorbike.png" id="akira-motorbike__img" alt="akira motorbike image"></p>
     </section>
 </main>

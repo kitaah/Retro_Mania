@@ -7,8 +7,8 @@
             <h2>An american cap brand located in San Francisco</h2>
             <p>Retro Mania was created in 2015 by two huge fans of the retrowave aesthetic and culture: Anthony Bardinter and Marta Hernandez.</p>
             <p>Click on the images below if you want to have more information about both of them !</p>
-            <p class="about-us__imgs"><img src="medias/img/site/about_us/anthony_bardinter.jpg" id="anthony-bardinter__img" title="Click here !" alt="Anthony Bardinter image" />
-                <img src="medias/img/site/about_us/marta_hernandez.jpg" id="marta-hernandez__img" title="Click here !" alt="Marta Hernandez image" />
+            <p class="about-us__imgs"><img src="medias/img/site/about_us/anthony_bardinter.jpg" id="anthony-bardinter__img" title="Click here !" alt="Anthony Bardinter image">
+                <img src="medias/img/site/about_us/marta_hernandez.jpg" id="marta-hernandez__img" title="Click here !" alt="Marta Hernandez image">
             </p>
         </article>
 
@@ -32,7 +32,7 @@
             <h2>High quality caps</h2>
             <p>Anthony and Marta are both really concerned about selling quality caps to all the retrowave lovers in their local shop in San Francisco.</p>
             <p>All the caps of the company are made in a small factory in the South of San Francisco with love and passion.</p>
-            <p><img src="medias/img/site/about_us/pixel_hearts.png" alt="pixel hearts image" /></p>
+            <p><img src="medias/img/site/about_us/pixel_hearts.png" alt="pixel hearts image"></p>
         </article>
 
         <article class="about-us__manufacturing-process margin-auto">

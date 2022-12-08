@@ -17,8 +17,8 @@
 
 <body>
     <header class="header__dashboard flex-center">
-        <p><a href="index.php?page=admin_logout"><img src="medias/img/layouts/admin_dashboard_sun.png" class="sun__img" alt="admin dashboard logo" /></a></p>
-        <p><img src="medias/img/layouts/admin_dashboard_logo.png" class="dashboard-logo__img" alt="admin dashboard logo" /></p>
+        <p><a href="index.php?page=admin_logout"><img src="medias/img/layouts/admin_dashboard_sun.png" class="sun__img" alt="admin dashboard logo"></a></p>
+        <p><img src="medias/img/layouts/admin_dashboard_logo.png" class="dashboard-logo__img" alt="admin dashboard logo"></p>
     </header>
 
     <?php require_once $this->adminPage; ?>
