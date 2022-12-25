@@ -5,8 +5,8 @@ class Create extends DatabaseConnection
 {
 	private $data;
 	private $sql; 
-	private $stmt; 
-	private $timeZone;
+	private $stmt;
+	private $timeZone; 
 	private $errDate; 
 	private $errLog;
 

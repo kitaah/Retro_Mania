@@ -19,10 +19,10 @@ $this->sessionOnlyAdmin();
             <tbody>
                 <?php foreach ($this->collectionsList as $collectionList) : ?>
                     <tr>
-                        <td><?php echo htmlspecialchars($collectionList['collection_id']) ?></td>
-                        <td><?php echo htmlspecialchars(ucwords($collectionList['name'])) ?></td>
-                        <td><?php echo htmlspecialchars(ucwords($collectionList['creator'])) ?></td>
-                        <td><?php echo htmlspecialchars($collectionList['creation_year']) ?></td>
+                        <td><?= htmlspecialchars($collectionList['collection_id']) ?></td>
+                        <td><?= htmlspecialchars(ucwords($collectionList['name'])) ?></td>
+                        <td><?= htmlspecialchars(ucwords($collectionList['creator'])) ?></td>
+                        <td><?= htmlspecialchars($collectionList['creation_year']) ?></td>
                     </tr>
                 <?php endforeach; ?>
             </tbody>
@@ -33,10 +33,10 @@ $this->sessionOnlyAdmin();
         <ul class="admin__bottom-navs flex-center">
             <li><a href="#" class="no-changing-page">&laquo;</a></li>
             <li><a href="#"><i id="admin-collections-list__current-page" class="fa-solid fa-list"></i></a></li>
-            <li><a href="index.php?page=admin_caps_catalog"><i class="fa-solid fa-clipboard-list" id="admin-collections-list__next-link"></i></a></li>
-            <li><a href="index.php?page=admin_employees_list"><i class="fa-solid fa-users"></i></a></li>
-            <li><a href="index.php?page=admin_winners_list"><i class="fa-solid fa-trophy"></i></a></li>
-            <li><a href="index.php?page=admin_caps_catalog" id="admin-collections-list__next-page">&raquo;</a></li>
+            <li><a href="index.php?p=admin_caps_catalog"><i class="fa-solid fa-clipboard-list" id="admin-collections-list__next-link"></i></a></li>
+            <li><a href="index.php?p=admin_employees_list"><i class="fa-solid fa-users"></i></a></li>
+            <li><a href="index.php?p=admin_winners_list"><i class="fa-solid fa-trophy"></i></a></li>
+            <li><a href="index.php?p=admin_caps_catalog" id="admin-collections-list__next-page">&raquo;</a></li>
         </ul>
     </nav>
 </main>

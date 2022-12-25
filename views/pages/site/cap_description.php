@@ -3,15 +3,15 @@
         <h1 class="h1-model text-center">Cap <span> descrip</span>tion</h1>
 
         <article class="cap-description__content flex-center margin-auto">
-            <p class="cap-description__content-details"><?php echo '<img class="cap-description__img" src="medias/img/caps_collections/caps_img/' . htmlspecialchars($this->cap["image"]) . '" alt="retro mania cap image">'; ?></p>
+            <p class="cap-description__content-details"><?= '<img class="cap-description__img" src="medias/img/caps_collections/caps_img/' . htmlspecialchars($this->cap["image"]) . '" alt="retro mania cap image">'; ?></p>
 
             <article class="cap-description__content-details">
-                <h2><?php echo htmlspecialchars(strtoupper($this->cap['name'])) ?></h2>
-                <h3 class="cap-description__content-details-price">$<?php echo htmlspecialchars($this->cap['price']) ?></h3>
+                <h2><?= htmlspecialchars(strtoupper($this->cap['name'])) ?></h2>
+                <h3 class="cap-description__content-details-price">$<?= htmlspecialchars($this->cap['price']) ?></h3>
                 <h3 class="cap-description__content-details-features">Features<i class="fa-solid fa-heart"></i></h3>
-                <p class="cap-description__content-details-description"><?php echo htmlspecialchars($this->cap['description']) ?></p>
+                <p class="cap-description__content-details-description"><?= htmlspecialchars($this->cap['description']) ?></p>
                 <p class="made-in-US">Made in the US</p>
-                <p class="cap-description__content-details-product_id"><i class="fa-solid fa-barcode"></i>Product code: <?php echo htmlspecialchars($this->cap['product_id']) ?></p>
+                <p class="cap-description__content-details-product_id"><i class="fa-solid fa-barcode"></i>Product code: <?= htmlspecialchars($this->cap['product_id']) ?></p>
 
                 <nav>
                     <ul class="cap-description__content-navs">
@@ -22,15 +22,15 @@
                 </nav>
             </article>
 
-            <p class="cap-description__content-details-devices"><?php echo '<img class="cap-description__img" src="medias/img/caps_collections/caps_img/' . htmlspecialchars($this->cap["image"]) . '" alt="retro mania cap image"/>'; ?></p>
+            <p class="cap-description__content-details-devices"><?= '<img class="cap-description__img" src="medias/img/caps_collections/caps_img/' . htmlspecialchars($this->cap["image"]) . '" alt="retro mania cap image"/>'; ?></p>
 
             <article class="cap-description__content-details-devices">
-                <h2><?php echo htmlspecialchars(strtoupper($this->cap['name'])) ?></h2>
-                <h3 class="cap-description__content-details-price-devices">$<?php echo htmlspecialchars($this->cap['price']) ?></h3>
+                <h2><?= htmlspecialchars(strtoupper($this->cap['name'])) ?></h2>
+                <h3 class="cap-description__content-details-price-devices">$<?= htmlspecialchars($this->cap['price']) ?></h3>
                 <h3 class="cap-description__content-details-features-devices">Features<i class="fa-solid fa-heart"></i></h3>
-                <p class="cap-description__content-details-description-devices"><?php echo htmlspecialchars($this->cap['description']) ?></p>
+                <p class="cap-description__content-details-description-devices"><?= htmlspecialchars($this->cap['description']) ?></p>
                 <p class="made-in-US">Made in the US</p>
-                <p class="cap-description__content-details-product_id-devices"><i class="fa-solid fa-barcode"></i>Product code: <?php echo htmlspecialchars($this->cap['product_id']) ?></p>
+                <p class="cap-description__content-details-product_id-devices"><i class="fa-solid fa-barcode"></i>Product code: <?= htmlspecialchars($this->cap['product_id']) ?></p>
 
                 <nav>
                     <ul class="cap-description__content-navs-devices">
@@ -49,6 +49,6 @@
         </article>
     </section>
 
-    <p><a href="index.php?page=caps_catalog" class="cap-description__previous-page text-center">&laquo;</a></p>
+    <p><a href="index.php?p=caps_catalog" class="cap-description__previous-page text-center">&laquo;</a></p>
     </nav>
 </main>

@@ -34,12 +34,12 @@
 
     <nav>
         <ul class="admin__bottom-navs flex-center">
-            <li><a href="index.php?page=admin_caps_catalog" id="admin-employees-list__previous-page">&laquo;</a></li>
-            <li><a href="index.php?page=admin_collections_list"><i class="fa-solid fa-list"></i></a></li>
-            <li><a href="index.php?page=admin_caps_catalog"><i class="fa-solid fa-clipboard-list" id="admin-employees-list__previous-link"></i></a></li>
+            <li><a href="index.php?p=admin_caps_catalog" id="admin-employees-list__previous-page">&laquo;</a></li>
+            <li><a href="index.php?p=admin_collections_list"><i class="fa-solid fa-list"></i></a></li>
+            <li><a href="index.php?p=admin_caps_catalog"><i class="fa-solid fa-clipboard-list" id="admin-employees-list__previous-link"></i></a></li>
             <li><a href="#"><i id="admin-employees-list__current-page" class="fa-solid fa-users admin-nav-icon"></i></a></li>
-            <li><a href="index.php?page=admin_winners_list"><i class="fa-solid fa-trophy" id="admin-employees-list__next-link"></i></a></li>
-            <li><a href="index.php?page=admin_winners_list" id="admin-employees-list__next-page">&raquo;</a></li>
+            <li><a href="index.php?p=admin_winners_list"><i class="fa-solid fa-trophy" id="admin-employees-list__next-link"></i></a></li>
+            <li><a href="index.php?p=admin_winners_list" id="admin-employees-list__next-page">&raquo;</a></li>
         </ul>
     </nav>
 </main>

@@ -1,4 +1,5 @@
 <?php
+
 namespace Models;
 
 class DatabaseConnection
@@ -13,7 +14,7 @@ class DatabaseConnection
 	private $timeZone;
 	private $errDate;
 	private $errLog;
-	
+
 	private function setDbCon()
 	{
 		try {
@@ -22,15 +23,14 @@ class DatabaseConnection
 		} catch (\PDOException $err) {
 			$this->timeZone = date_default_timezone_set('Europe/Paris');
 			$this->errDate = date('d-m-Y 📅 H:i:s ⏰');
-			$this->errLog = file_put_contents('logs/database/errors.txt',$err . $this->errDate . PHP_EOL,  FILE_APPEND);
+			$this->errLog = file_put_contents('logs/database/errors.txt', $err . $this->errDate . PHP_EOL,  FILE_APPEND);
 			exit("Something went wrong ⚠️! Please read the following message ! ➡️ " . $err->getMessage() . " ⛔");
 		}
 	}
-	
-	public function getDbCon() 
+
+	public function getDbCon()
 	{
-		if($this->dbCon == null)
-		{
+		if ($this->dbCon == null) {
 			$this->setDbCon();
 		}
 		return $this->dbCon;

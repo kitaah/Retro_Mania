@@ -9,6 +9,7 @@ class Controller
     private $adminLayout = 'views/layouts/admin_layout.php';
 	private $siteLayout = 'views/layouts/site_layout.php';
     private $secretLayout = 'views/layouts/secret_layout.php';
+	private $titleLayout;
 	private $model;
 	private $capsCatalog;
 	private $cap;
@@ -42,7 +43,7 @@ class Controller
 
 	private function sessionAdmin() {
 		if (!isset($_SESSION['admin_id'])) {
-			exit(header('Location: index.php?page=admin_home'));
+			exit(header('Location: index.php?p=admin_home'));
 		}
 	}
 
@@ -51,7 +52,8 @@ class Controller
 	}
 
 	private function adminHome() {
-		$this->adminPage = ('views/pages/admin/admin_home.php');
+		$this->adminPage = 'views/pages/admin/admin_home.php';
+		$this->titleLayout = 'Admin Home | Retro Mania';
 		require_once($this->adminLayout);
 	} 
 
@@ -60,7 +62,7 @@ class Controller
 	}
 	
 	private function adminRegistration() {
-		$this->adminPage = ('views/pages/admin/admin_registration.php');
+		$this->adminPage = 'views/pages/admin/admin_registration.php';
 		require_once($this->adminLayout);
 	}
 
@@ -76,7 +78,7 @@ class Controller
 		$this->model = new \Models\Create();
 		$this->newValidation = $this->validation ->validationNewAdminAccount($this->admin_username,$this->password);
 		$this->adminPage = $this->model->createNewAdminAccount($this->admin_username,$this->hashed_password);
-		exit(header('Location: index.php?page=admin_login'));
+		exit(header('Location: index.php?p=admin_login'));
 	}
 
 	public function createNewAdmin() {	
@@ -84,7 +86,8 @@ class Controller
 	}
 
 	private function adminLogin() {
-		$this->adminPage = ('views/pages/admin/admin_login.php');
+		$this->adminPage = 'views/pages/admin/admin_login.php';
+		$this->titleLayout = 'Admin login | Retro Mania';
 		require_once($this->adminLayout);
 	}
 	
@@ -99,7 +102,7 @@ class Controller
 		$this->model = new \Models\Read();
 		$this->newValidation = $this->validation ->validationCurrentAdminAccount($this->admin_username,$this->password);
 		$this->adminPage = $this->model->readCurrentAdminAccount($this->admin_username, $this->password);
-		exit(header('Location: index.php?page=admin_menu'));
+		exit(header('Location: index.php?p=admin_menu'));
 		}
 
 	public function readCurrentAdmin() {	
@@ -107,7 +110,7 @@ class Controller
 	}
 			
 	private function adminLogout() {
-		$this->adminPage = ('views/pages/admin/admin_logout.php');
+		$this->adminPage = 'views/pages/admin/admin_logout.php';
 		require_once($this->adminLayout);
 	}
 		
@@ -116,7 +119,8 @@ class Controller
 	}
 	
 	private function adminMenu() {
-		$this->adminPage = ('views/pages/admin/admin_menu.php');
+		$this->adminPage = 'views/pages/admin/admin_menu.php';
+		$this->titleLayout = 'Admin menu | Retro Mania';
 		require_once($this->adminLayout);
 	}
 			
@@ -158,7 +162,7 @@ class Controller
 		$this->model = new \Models\Create();
 		$this->newValidation = $this->validation ->validationNewCap($this->name, $this->price, $this->quantity, $this->image, $this->description, $this->collection_id, $this->admin_contributor_id);
 		$this->cap = $this->model->createNewCap($this->name, $this->price, $this->quantity, $this->image, $this->description, $this->collection_id, $this->admin_contributor_id);
-		exit(header('Location: index.php?page=admin_caps_catalog'));
+		exit(header('Location: index.php?p=admin_caps_catalog'));
 	}
 					
 	public function createNewCap() {	
@@ -169,7 +173,7 @@ class Controller
 		$this->product_id = $_GET['product_id'];
 		$this->model = new \Models\Delete();
 		$this->cap = $this->model->deleteCap($this->product_id);
-		exit(header('Location: index.php?page=admin_caps_catalog'));
+		exit(header('Location: index.php?p=admin_caps_catalog'));
 	}
 		
 	public function deleteCurrentCap() {	
@@ -180,7 +184,8 @@ class Controller
 		$this->product_id = $_GET['product_id'];
 		$this->model = new \Models\Read();
 		$this->cap = $this->model->readCapDescription($this->product_id);
-		$this->adminPage = ('views/pages/admin/admin_cap_description.php');
+		$this->adminPage = 'views/pages/admin/admin_cap_description.php';
+		$this->titleLayout = 'Cap description | Retro Mania';
 		require_once($this->adminLayout);
 	}
 						
@@ -196,7 +201,7 @@ class Controller
 		$this->newValidation = $this->validation ->validationUpdateCurrentCapImage($this->image, $this->product_id);
 		$this->capImage = $this->model->updateCurrentCapImage($this->image, $this->product_id);
 			
-		exit(header('Location: index.php?page=admin_caps_catalog'));
+		exit(header('Location: index.php?p=admin_caps_catalog'));
 	}
 
 	public function updateCurrentCapImage() {	
@@ -207,7 +212,8 @@ class Controller
 		$this->product_id = $_GET['product_id'];
 		$this->adminCaps = new \Models\Read();
 		$this->cap = $this->adminCaps->readExistingCap($this->product_id);	
-		$this->adminPage = ('views/pages/admin/admin_edit_cap.php');
+		$this->adminPage = 'views/pages/admin/admin_edit_cap.php';
+		$this->titleLayout = 'Edit a cap | Retro Mania';
 		require_once($this->adminLayout);
 	}
 							
@@ -227,7 +233,7 @@ class Controller
 		$this->model = new \Models\Update();
 		$this->newValidation = $this->validation ->validationUpdateCurrentCap($this->name, $this->price, $this->quantity, $this->description, $this->collection_id, $this->admin_contributor_id, $this->product_id);
 		$this->cap = $this->model->updateCurrentCap($this->name, $this->price, $this->quantity, $this->description, $this->collection_id, $this->admin_contributor_id, $this->product_id);			
-		exit(header('Location: index.php?page=admin_caps_catalog'));
+		exit(header('Location: index.php?p=admin_caps_catalog'));
 	}
 			
 	public function updateCurrentCap() {	
@@ -237,7 +243,8 @@ class Controller
 	private function employeesList() {
 		$this->model = new \Models\Read();
 		$this->employeesList = $this->model->readEmployeesList();	
-		$this->adminPage = ('views/pages/admin/admin_employees_list.php');
+		$this->adminPage = 'views/pages/admin/admin_employees_list.php';
+		$this->titleLayout = 'Employees list | Retro Mania';
 		require_once($this->adminLayout);
 	}
 	
@@ -248,7 +255,8 @@ class Controller
 	private function winnersList() {
 		$this->model = new \Models\Read();
 		$this->winnersList = $this->model->readWinnersList();
-		$this->adminPage = ('views/pages/admin/admin_winners_list.php');
+		$this->adminPage = 'views/pages/admin/admin_winners_list.php';
+		$this->titleLayout = 'Winners list | Retro Mania';
 		require_once($this->adminLayout);
 	}
 	
@@ -257,7 +265,8 @@ class Controller
 	}
 
 	private function siteHome() {
-		$this->sitePage = ('views/pages/site/home.php');
+		$this->sitePage = 'views/pages/site/home.php';
+		$this->titleLayout = 'Home | Retro Mania';
 		require_once($this->siteLayout);
 	}
 	
@@ -266,7 +275,8 @@ class Controller
 	}
 
 	private function aboutUs() {
-		$this->sitePage = ('views/pages/site/about_us.php');
+		$this->sitePage = 'views/pages/site/about_us.php';
+		$this->titleLayout = 'About us | Retro Mania';
 		require_once($this->siteLayout);
 	}
 	
@@ -277,7 +287,8 @@ class Controller
 	private function capsCatalogVisitors() {
 		$this->model = new \Models\Read();
 		$this->capsCatalog = $this->model->readCapsCatalogVisitors();
-		$this->sitePage = ('views/pages/site/caps_catalog.php');
+		$this->sitePage = 'views/pages/site/caps_catalog.php';
+		$this->titleLayout = 'Caps catalog | Retro Mania';
 		require_once($this->siteLayout);
 	}
 	
@@ -290,7 +301,8 @@ class Controller
 		$this->product_id = $_GET['product_id'];
 		$this->model = new \Models\Read();
 		$this->cap = $this->model->readCapDescriptionVisitors($this->product_id);
-		$this->sitePage = ('views/pages/site/cap_description.php');
+		$this->sitePage = 'views/pages/site/cap_description.php';
+		$this->titleLayout = 'Cap description | Retro Mania';
 		require_once($this->siteLayout);
 	}
 	
@@ -300,7 +312,8 @@ class Controller
 	}
 
 	private function searchGame() {
-		$this->sitePage = ('views/pages/site/search_game.php');
+		$this->sitePage = 'views/pages/site/search_game.php';
+		$this->titleLayout = 'Search game | Retro Mania';
 		require_once($this->siteLayout);
 	}
 		
@@ -310,7 +323,8 @@ class Controller
 	}
 
 	private function contactUs() {
-		$this->sitePage = ('views/pages/site/contact_us.php');
+		$this->sitePage = 'views/pages/site/contact_us.php';
+		$this->titleLayout = 'Contact us | Retro Mania';
 		require_once($this->siteLayout);
 	}
 			
@@ -324,7 +338,8 @@ class Controller
 		$this->allComments = $this->model->readCommentsVisitors();
 		$this->badWords = ['arse', 'asshole', 'bitch', 'bastard', 'bollocks', 'bugger', 'cunt', 'dick', 'dyke', 'cock', 'fag', 'fuck', 'nigga', 'porn', 'pussy', 'prick', 'sex', 'shit', 'slut', 'tranny', 'twat', 'viagra', 'wanker'];
 		$this->censorBadWords = "🤬🤬🤬";
-		$this->sitePage = ('views/pages/site/online_guestbook.php');
+		$this->sitePage = 'views/pages/site/online_guestbook.php';
+		$this->titleLayout = 'Online guestbook | Retro Mania';
 		require_once($this->siteLayout);
 	}
 				
@@ -344,7 +359,7 @@ class Controller
 		$this->model  = new \Models\Create();
 		$this->newValidation = $this->validation ->validationNewComment($this->username,$this->title,$this->comment,$this->website);
 		$this->newComment = $this->model ->createNewCommentVisitors($this->username,$this->avatar,$this->title,$this->rating,$this->comment);
-		exit(header('Location: index.php?page=guestbook'));
+		exit(header('Location: index.php?p=guestbook'));
 	}
 					
 	public function visitorCreateNewComment()
@@ -353,7 +368,8 @@ class Controller
 	}
 
 	private function privacyPolicy() {
-		$this->sitePage = ('views/pages/site/privacy_policy.php');
+		$this->sitePage = 'views/pages/site/privacy_policy.php';
+		$this->titleLayout = 'Privacy Policy | Retro Mania';
 		require_once($this->siteLayout);
 	}
 			
@@ -363,7 +379,8 @@ class Controller
 	}
 	
 	private function termsOfService() {
-		$this->sitePage = ('views/pages/site/terms_of_service.php');
+		$this->sitePage = 'views/pages/site/terms_of_service.php';
+		$this->titleLayout = 'Terms of service | Retro Mania';
 		require_once($this->siteLayout);
 	}
 		
@@ -373,7 +390,8 @@ class Controller
 	}
 
     private function secretPage() {
-		$this->secretPage = ('views/pages/secret/secret_page.php');
+		$this->secretPage = 'views/pages/secret/secret_page.php';
+		$this->titleLayout = 'バブルボブル | レトロマニア';
 		require_once($this->secretLayout);
 	}
 

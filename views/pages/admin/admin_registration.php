@@ -8,7 +8,7 @@
         <h1 class="h1-model text-center">Reg<span>istra</span>tion</h1>
 
         <article class="admin-register__form">
-            <form method="POST" action="index.php?page=add_new_admin" id="admin-register__form-content" autocomplete="off">
+            <form method="POST" action="index.php?p=add_new_admin" id="admin-register__form-content" autocomplete="off">
                 <label for="admin-register-username" class="line-break-after">Username</label>
                 <input type="text" id="admin-register-username" name="admin_username" placeholder="Username...">
                 <i class="fa-solid fa-circle-check check-form"></i>

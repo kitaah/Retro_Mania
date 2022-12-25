@@ -10,7 +10,7 @@
 
         <article class="online-guestbook__form">
             <h2>Guestbook form</h2>
-            <form action="index.php?page=add_comment" method="POST" id="online-guestbook__form-content" autocomplete="off">
+            <form action="index.php?p=add_comment" method="POST" id="online-guestbook__form-content" autocomplete="off">
                 <label for="guestbook-username" class="line-break-after">Username</label>
                 <input type="text" id="guestbook-username" name="username" placeholder="Username...">
                 <i class="fa-solid fa-circle-check check-form"></i>
@@ -71,11 +71,11 @@
         <article class="online-guestbook__comments-section">
             <h2 class="text-center">Comments section<i class="fa-solid fa-comment-dots"></i></h2>
             <?php foreach ($this->allComments as $allComment) : ?>
-                <p><?php echo '<span class="avatar">' . htmlspecialchars($allComment['avatar']) . '</span>' . '<span class="username">' . htmlspecialchars($allComment['username']) . '</span>' ?></p>
-                <p class="rating"><?php echo htmlspecialchars($allComment['rating']) ?></p>
-                <p class="title"><?php echo htmlspecialchars($allComment['title']) ?></p>
-                <p class="comment"><?php echo htmlspecialchars(str_replace($this->badWords, $this->censorBadWords, $allComment['comment'])) ?></p>
-                <p class="created_at">🕑 <?php echo htmlspecialchars($allComment['created_at']) ?></p>
+                <p><?= '<span class="avatar">' . htmlspecialchars($allComment['avatar']) . '</span>' . '<span class="username">' . htmlspecialchars($allComment['username']) . '</span>' ?></p>
+                <p class="rating"><?= htmlspecialchars($allComment['rating']) ?></p>
+                <p class="title"><?= htmlspecialchars($allComment['title']) ?></p>
+                <p class="comment"><?= htmlspecialchars(str_replace($this->badWords, $this->censorBadWords, $allComment['comment'])) ?></p>
+                <p class="created_at">🕑 <?= htmlspecialchars($allComment['created_at']) ?></p>
             <?php endforeach; ?>
         </article>
     </section>

@@ -3,8 +3,8 @@
 
 require_once __DIR__ . '/vendor/autoloader.php';
 
-$page = $_GET['page'];
-if(isset($page))
+$page = $_GET['p'];
+if(array_key_exists('p', $_GET))
 {
 	switch($page)
 	{
@@ -121,10 +121,10 @@ if(isset($page))
 			$secretController->displaySecretPage();
 			break;
 		default: 
-			exit(header('Location: index.php?page=secret_page'));
+			exit(header('Location: index.php?p=secret_page'));
 			break;
 	}
 } else {
-	exit(header('Location: index.php?page=home'));
+	exit(header('Location: index.php?p=home'));
 }
 ?>

@@ -8,7 +8,7 @@
         <h1 class="h1-model text-center">L<span>ogi</span>n</h1>
 
         <article class="admin-login__form">
-            <form method="POST" action="index.php?page=add_admin_login" id="admin-login__form-content" autocomplete="off">
+            <form method="POST" action="index.php?p=add_admin_login" id="admin-login__form-content" autocomplete="off">
                 <label for="admin-login-username" class="line-break-after">Username</label>
                 <input type="text" id="admin-login-username" name="admin_username" placeholder="Username...">
                 <i class="fa-solid fa-circle-check check-form"></i>

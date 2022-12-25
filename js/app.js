@@ -1235,7 +1235,7 @@ document.addEventListener("DOMContentLoaded", () => {
     let textHomeButton = document.getElementById("site-home-top__link");
 
     textHomeButton?.addEventListener("click", () => {
-    textHomeButton.textContent = "<p>Let's go ! 🚀</p>";
+    textHomeButton.textContent = "Let's go ! 🚀";
     textHomeButton.style.backgroundColor = "#531253";
     });  
 }); 

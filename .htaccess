@@ -5,6 +5,9 @@ Options -Indexes
 #RewriteCond %{SERVER_PORT} ^80$
 #RewriteRule ^.*$ https://%{SERVER_NAME}%{REQUEST_URI} [R=301,L]
 
+RewriteCond %{THE_REQUEST} ^GET.*index\.php [NC]
+RewriteRule (.*?)index\.php/*(.*) /$1$2 [R=301,NE,L]
+
 <ifModule mod_headers.c> 
     <FilesMatch "\.(jpg|png|ico|otf|cur|ttf)$">
         Header set Cache-Control "max-age=31536000, public"
@@ -20,8 +23,8 @@ Options -Indexes
     AddOutputFilterByType DEFLATE text/html text/css text/plain text/xml text/x-js text/js 
 </IfModule>
 
-ErrorDocument 403 Retro_Mania/views/pages/errors/error_403.php
-ErrorDocument 404 Retro_Mania/views/pages/errors/error_404.php
+ErrorDocument 403 /views/pages/errors/error_403.php
+ErrorDocument 404 /views/pages/errors/error_404.php
 
 
 
