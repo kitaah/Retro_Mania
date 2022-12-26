@@ -1292,7 +1292,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }, {once : true});  
 
     littleMark?.addEventListener("click", () => {
-        popupGif.removeAttribute("open", false)
+        popupGif.removeAttribute("open", false);
     }); 
 });
 
@@ -1309,7 +1309,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }, {once : true});  
 
     littleMark?.addEventListener("click", () => {
-        popupGif.removeAttribute("open", false)
+        popupGif.removeAttribute("open", false);
     }); 
 });
 
