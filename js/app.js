@@ -292,8 +292,8 @@ document.addEventListener("DOMContentLoaded", () => {
     let regExpName = /^[a-zA-Z\s]*$/;
     let regExpPrice = /^[+]?\d+([.]\d+)?$/;
     let regExpQuantity = /^[1-9]\d*$/; 
-    let regExpCollection_Id = /^[1-9]\d*$/;
-    let regExpAdminCreator_Id = /^[1-9]\d*$/;
+    let regExpCollectionId = /^[1-9]\d*$/;
+    let regExpAdminCreatorId = /^[1-9]\d*$/;
 
     addProductForm?.addEventListener("submit", (e) => {
         if  (capName.value.match(regExpName)) {
@@ -323,7 +323,7 @@ document.addEventListener("DOMContentLoaded", () => {
             capQuantity.focus();
             e.preventDefault();
         }
-        if  (capCollectionId.value.match(regExpCollection_Id)) {
+        if  (capCollectionId.value.match(regExpCollectionId)) {
             warningMessage.style.display = "none";
             submitBtn.style.display = "block";
         } else {
@@ -332,7 +332,7 @@ document.addEventListener("DOMContentLoaded", () => {
             capCollectionId.focus();
             e.preventDefault();
         }
-        if  (capAdminCreatorId.value.match(regExpAdminCreator_Id)) {
+        if  (capAdminCreatorId.value.match(regExpAdminCreatorId)) {
             warningMessage.style.display = "none";
             submitBtn.style.display = "block";
         } else {
@@ -494,10 +494,10 @@ document.addEventListener("DOMContentLoaded", () => {
     let invalidCapCollectionId = document.getElementsByClassName("xmark-form")[3];
     let warningMessage = document.getElementById("add-product-message");
     let submitBtn = document.getElementById("admin-add-product__submit");
-    let regExpCollection_Id = /^[1-9]\d*$/;
+    let regExpCollectionId = /^[1-9]\d*$/;
     
     capCollectionId?.addEventListener("input", () => {  
-        if  (capCollectionId.value.match(regExpCollection_Id)) {
+        if  (capCollectionId.value.match(regExpCollectionId)) {
             capCollectionId.style.borderColor = "#008000";
             invalidCapCollectionId.style.display = "none";
             validCapCollectionId.style.display = "inline-block";
@@ -513,7 +513,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     capCollectionId?.addEventListener("click", () => {  
-        if  (capCollectionId.value.match(regExpCollection_Id)) {
+        if  (capCollectionId.value.match(regExpCollectionId)) {
             capCollectionId.style.borderColor = "#008000";
             invalidCapCollectionId.style.display = "none";
             validCapCollectionId.style.display = "inline-block";
@@ -536,10 +536,10 @@ document.addEventListener("DOMContentLoaded", () => {
     let invalidCapAdminCreatorId = document.getElementsByClassName("xmark-form")[4];
     let warningMessage = document.getElementById("add-product-message");
     let submitBtn = document.getElementById("admin-add-product__submit");
-    let regExpCollection_Id = /^[1-9]\d*$/;
+    let regExpCollectionId = /^[1-9]\d*$/;
     
     capAdminCreatorId?.addEventListener("input", () => {  
-        if  (capAdminCreatorId.value.match(regExpCollection_Id)) {
+        if  (capAdminCreatorId.value.match(regExpCollectionId)) {
             capAdminCreatorId.style.borderColor = "#008000";
             invalidCapAdminCreatorId.style.display = "none";
             validCapAdminCreatorId.style.display = "inline-block";
@@ -555,7 +555,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     capAdminCreatorId?.addEventListener("click", () => {  
-        if  (capAdminCreatorId.value.match(regExpCollection_Id)) {
+        if  (capAdminCreatorId.value.match(regExpCollectionId)) {
             capAdminCreatorId.style.borderColor = "#008000";
             invalidCapAdminCreatorId.style.display = "none";
             validCapAdminCreatorId.style.display = "inline-block";
@@ -931,10 +931,10 @@ document.addEventListener("DOMContentLoaded", () => {
     let invalidCapCollectionId = document.getElementsByClassName("xmark-form")[3];
     let warningMessage = document.getElementById("product-update-message");
     let submitBtn = document.getElementById("admin-product-update__submit");
-    let regExpCollection_Id = /^[1-9]\d*$/;
+    let regExpCollectionId = /^[1-9]\d*$/;
     
     capCollectionId?.addEventListener("input", () => {  
-        if(capCollectionId.value.match(regExpCollection_Id)) {
+        if(capCollectionId.value.match(regExpCollectionId)) {
             capCollectionId.style.borderColor = "#008000";
             invalidCapCollectionId.style.display = "none";
             validCapCollectionId.style.display = "inline-block";
@@ -950,7 +950,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     capCollectionId?.addEventListener("click", () => {  
-        if(capCollectionId.value.match(regExpCollection_Id)) {
+        if(capCollectionId.value.match(regExpCollectionId)) {
             capCollectionId.style.borderColor = "#008000";
             invalidCapCollectionId.style.display = "none";
             validCapCollectionId.style.display = "inline-block";
