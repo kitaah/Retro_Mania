@@ -2,8 +2,7 @@
 session_start();
 $_SESSION = array();
 session_destroy();
-?>
-<!DOCTYPE html>
+?><!DOCTYPE html>
 <html lang="en">
 
 <head>
