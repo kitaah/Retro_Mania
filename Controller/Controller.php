@@ -13,6 +13,7 @@ class Controller
 	private $model;
 	private $capsCatalog;
 	private $cap;
+	private $adminCaps;
 	private $product_id;
 	private $allComments;
 	private $badWords;
@@ -63,6 +64,7 @@ class Controller
 	
 	private function adminRegistration() {
 		$this->adminPage = 'views/pages/admin/admin_registration.php';
+		$this->titleLayout = 'Admin registration | Retro Mania';
 		require_once($this->adminLayout);
 	}
 
@@ -131,7 +133,8 @@ class Controller
 	private function collectionsList() {
 		$this->model = new \Models\Read();
 		$this->collectionsList = $this->model->readCollectionsList();
-		$this->adminPage = ('views/pages/admin/admin_collections_list.php');
+		$this->adminPage = 'views/pages/admin/admin_collections_list.php';
+		$this->titleLayout = 'Collections list | Retro Mania';
 		require_once($this->adminLayout);
 	}
 				
@@ -142,7 +145,8 @@ class Controller
 	private function adminCapsCatalog() {
 		$this->model = new \Models\Read();
 		$this->capsCatalog = $this->model->readCatalog();
-		$this->adminPage = ('views/pages/admin/admin_caps_catalog.php');
+		$this->adminPage = 'views/pages/admin/admin_caps_catalog.php';
+		$this->titleLayout = 'Caps catalog | Retro Mania';
 		require_once($this->adminLayout);
 	}
 					

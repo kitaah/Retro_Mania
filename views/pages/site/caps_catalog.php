@@ -4,7 +4,7 @@
 
         <article class="caps-catalog__content-details">
             <?php foreach ($this->capsCatalog as $capCatalog) : ?>
-                <p><?= '<img src="medias/img/caps_collections/caps_img/' . htmlspecialchars($capCatalog["image"]) . '"class="caps-catalog__img""' . '"alt="retro mania cap image"">'; ?></p>
+                <p><?= '<img class="caps-catalog__img" src="medias/img/caps_collections/caps_img/'. htmlspecialchars($capCatalog["image"]) . '" alt="retro mania cap image">' ?></p>
                 <header>
                     <h2><?= htmlspecialchars($capCatalog['name']) ?></h2>
                     <h3>$<?= htmlspecialchars($capCatalog['price']) ?></h3>
