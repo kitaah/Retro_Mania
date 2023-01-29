@@ -31,5 +31,5 @@ L'espace administrateur est accessible à partir du lien suivant:
 
 <p><img src="medias/img/github_screenshot.jpg" alt="screenshot du site Retro Mania"></p><br>
 
-<p align="center"><img src="https://komarev.com/ghpvc/?username=kitaah&color=red" alt="kitaah" /></p>
+<p align="center"><img src="https://komarev.com/ghpvc/?username=kitaah&color=blue" alt="kitaah" /></p>
 
