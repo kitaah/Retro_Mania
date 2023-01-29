@@ -12,10 +12,12 @@ Le site internet est accessible à tout visiteur à l'adresse suivante:
 L'espace administrateur est accessible à partir du lien suivant:
  - [https://retro-mania.melanieroussy.fr/index.php?p=admin_home](retro-mania.melanieroussy.fr)
 
+
 ## Langages
 
 - **Front-end:** HTML, CSS, JavaScript (avec librairie d'icônes Fontawesome)
 - **Back-end:** PHP, SQL
+
 
 ## Outils
 
