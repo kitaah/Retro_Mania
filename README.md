@@ -14,7 +14,7 @@ L'espace administrateur est accessible à partir du lien suivant:
 
 ## Langages
 
-- **Front-end:** HTML, CSS, JavaScript (avec librairie Fontawesome)
+- **Front-end:** HTML, CSS, JavaScript (avec librairie d'icônes Fontawesome)
 - **Back-end:** PHP, SQL
 
 ## Outils
