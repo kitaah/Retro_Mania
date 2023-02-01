@@ -7,10 +7,9 @@ Dans le cadre de la formation de développeur web que j'ai réalisé à la 3W Ac
 ## Liens du site
 
 Le site internet est accessible à tout visiteur à l'adresse suivante:
- - [retro-mania.melanieroussy.fr](retro-mania.melanieroussy.fr)
+- [Accès visiteur](https://retro-mania.melanieroussy.fr)
 
-L'espace administrateur est accessible à partir du lien suivant:
- - [https://retro-mania.melanieroussy.fr/index.php?p=admin_home](retro-mania.melanieroussy.fr)
+ - [Accès administrateur](https://retro-mania.melanieroussy.fr/index.php?p=admin_home)
 
 
 ## Fonctionnalités
