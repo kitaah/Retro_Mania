@@ -15,8 +15,8 @@ L'espace administrateur est accessible à partir de l'adresse suivante:
 
 ## Fonctionnalités
 
-- **Accès visiteur:** consulter le catalogue des casquettes, jouer à un mini-jeux permettant de gagner une casquette de son choix.
-- **Accès administrateur**: création de compte, login, CRUD portant sur les casquettes, consultation des collections et des gagnants du mini-jeux.  
+- **Accès visiteur:** consulter le catalogue des casquettes, jouer à un mini-jeu permettant de gagner une casquette de son choix.
+- **Accès administrateur**: création de compte, login, CRUD portant sur les casquettes, consultation des collections et des gagnants du mini-jeu.  
 
 
 ## Langages
