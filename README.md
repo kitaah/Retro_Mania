@@ -13,6 +13,12 @@ L'espace administrateur est accessible à partir du lien suivant:
  - [https://retro-mania.melanieroussy.fr/index.php?p=admin_home](retro-mania.melanieroussy.fr)
 
 
+## Fonctionnalités
+
+- **Accès visiteur:** consulter le catalogue des casquettes, jouer à un mini-jeux pour gagner une casquette de son choix.
+- **Accès administrateur**: création de compte, login, CRUD portant sur les casquettes, consultation des collections et des gagnants d'un mini-jeux du site.  
+
+
 ## Langages
 
 - **Front-end:** HTML, CSS, JavaScript (avec librairie d'icônes Fontawesome)
