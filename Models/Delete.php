@@ -3,7 +3,6 @@ namespace Models;
 
 class Delete extends DatabaseConnection
 {
-    private $data;
 	private $sql;
 	private $stmt;
 	private $timeZone;
@@ -13,9 +12,10 @@ class Delete extends DatabaseConnection
     private function capToDelete($product_id)
 	{
 		try {
-			$this->data = ['product_id' => $product_id];
-			$this->sql =  "DELETE FROM `products` WHERE `product_id` = :product_id"; 
-			$this->stmt = $this->getDbCon()->prepare($this->sql)->execute($this->data);
+			$this->sql = "DELETE FROM `products` WHERE `product_id` = ?";
+			$this->stmt = $this->getDbCon()->prepare($this->sql);
+			$this->stmt->bindValue(1, $product_id, \PDO::PARAM_INT);
+			$this->stmt->execute();
 		} catch(\PDOException $err) {
 			$this->timeZone =date_default_timezone_set('Europe/Paris');
 			$this->errDate = date('d-m-Y 📅 H:i:s ⏰');
