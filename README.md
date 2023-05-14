@@ -21,7 +21,7 @@ L'espace administrateur est accessible à partir de l'adresse suivante:
 
 ## Langages
 
-- **Front-end:** HTML, CSS, JavaScript (avec librairie d'icônes Fontawesome)
+- **Front-end:** HTML, CSS, JavaScript (avec librairie d'icônes Font Awesome)
 - **Back-end:** PHP, SQL
 
 
