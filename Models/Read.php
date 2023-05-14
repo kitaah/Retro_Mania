@@ -3,7 +3,6 @@ namespace Models;
 
 class Read extends DatabaseConnection 
 { 
-    private $data; 
 	private $sql; 
 	private $stmt; 
 	private $result;
@@ -13,10 +12,10 @@ class Read extends DatabaseConnection
 
 	private function readAdminAccount($admin_username,$password) {
 		try {
-			$this->data = ["admin_username"=> $admin_username];
-			$this->sql = "SELECT * FROM `admins` WHERE `admin_username`= :admin_username";
+			$this->sql = "SELECT * FROM `admins` WHERE `admin_username`= ?";
 			$this->stmt = $this->getDbCon()->prepare($this->sql);
-			$this->stmt->execute($this->data);
+			$this->stmt->bindValue(1, $admin_username);
+			$this->stmt->execute();
 			$this->result = $this->stmt->fetch();
 			if	(!$this->result || !password_verify($password, $this->result['password'])) {
 				exit("Invalid admin account ⚠️");
@@ -78,10 +77,10 @@ class Read extends DatabaseConnection
     private function capDescription($product_id)
 	{
 		try {
-			$this->data = ["product_id" => $product_id];
-			$this->sql =  "SELECT * FROM `products` WHERE `product_id` = :product_id"; 
+			$this->sql =  "SELECT * FROM `products` WHERE `product_id` = ?";
 			$this->stmt = $this->getDbCon()->prepare($this->sql);
-			$this->stmt->execute($this->data);
+			$this->stmt->bindValue(1, $product_id, \PDO::PARAM_INT);
+			$this->stmt->execute();
 			return $this->stmt->fetch();
 		} catch(\PDOException $err) {
 			$this->timeZone = date_default_timezone_set('Europe/Paris');
@@ -117,10 +116,10 @@ class Read extends DatabaseConnection
     private function existingCap($product_id)
 	{
 		try {
-			$this->data = ["product_id" => $product_id];
-			$this->sql =  "SELECT * FROM `products` WHERE `product_id` = :product_id"; 
+			$this->sql =  "SELECT * FROM `products` WHERE `product_id` = ?";
 			$this->stmt = $this->getDbCon()->prepare($this->sql);
-			$this->stmt->execute($this->data);
+			$this->stmt->bindValue(1, $product_id, \PDO::PARAM_INT);
+			$this->stmt->execute();
 			return $this->stmt->fetch();
 		} catch(\PDOException $err) {
 			$this->timeZone = date_default_timezone_set('Europe/Paris');
@@ -176,10 +175,10 @@ class Read extends DatabaseConnection
     private function capDescriptionVisitors($product_id)
 	{
 		try {
-			$this->data = ["product_id" => $product_id];
-			$this->sql =  "SELECT * FROM `products` WHERE `product_id` = :product_id";
+			$this->sql =  "SELECT * FROM `products` WHERE `product_id` = ?";
 			$this->stmt = $this->getDbCon()->prepare($this->sql);
-			$this->stmt->execute($this->data);
+			$this->stmt->bindValue(1, $product_id, \PDO::PARAM_INT);
+			$this->stmt->execute();
 			return $this->stmt->fetch();
 		} catch(\PDOException $err) {
 			$this->timeZone = date_default_timezone_set('Europe/Paris');
