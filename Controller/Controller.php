@@ -52,6 +52,28 @@ class Controller
 		return $this->sessionAdmin();
 	}
 
+	private function sessionCookieImproved()
+	{
+		$params = session_get_cookie_params();
+		setcookie(
+			"PHPSESSID",
+			session_id(),
+			[
+				'expires' => 0,
+				'path' => $params["path"],
+				'domain' => $params["domain"],
+				'secure' => true,
+				'httponly' => true,
+				'samesite' => 'Lax'
+			]
+		);
+	}
+
+	public function sessionCookie()
+	{
+		return $this->sessionCookieImproved();
+	}
+
 	private function adminHome() {
 		$this->adminPage = 'views/pages/admin/admin_home.php';
 		$this->titleLayout = 'Admin Home | Retro Mania';
