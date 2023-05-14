@@ -20,7 +20,7 @@ $this->sessionOnlyAdmin();
             <tbody>
                 <?php foreach ($this->capsCatalog as $capCatalog) : ?>
                     <tr>
-                        <td><?= '<img class="admin-caps-catalog__img" src="medias/img/caps_collections/caps_img/' . htmlspecialchars($capCatalog["image"]) . '" alt="retro mania cap image">' ?></td>
+                        <td><img class="admin-caps-catalog__img" src="medias/img/caps_collections/caps_img/<?= htmlspecialchars($capCatalog['image']) ?>" alt="retro mania cap image"></td>
                         <td><?= htmlspecialchars(ucwords($capCatalog['name'])) ?></td>
                         <td>$<?= htmlspecialchars($capCatalog['price']) ?></td>
                         <td><?= htmlspecialchars($capCatalog['quantity']) ?></td>
