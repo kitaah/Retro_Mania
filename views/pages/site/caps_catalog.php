@@ -4,11 +4,11 @@
 
         <article class="caps-catalog__content-details">
             <?php foreach ($this->capsCatalog as $capCatalog) : ?>
-                <p><?= '<img class="caps-catalog__img" src="medias/img/caps_collections/caps_img/'. htmlspecialchars($capCatalog["image"]) . '" alt="retro mania cap image">' ?></p>
-                <header>
+                <p><?php echo '<img src="medias/img/caps_collections/caps_img/' . htmlspecialchars($capCatalog["image"]) . '"class="caps-catalog__img""' . '"alt="retro mania cap image"">'; ?></p>
+                <hgroup>
                     <h2><?= htmlspecialchars($capCatalog['name']) ?></h2>
                     <h3>$<?= htmlspecialchars($capCatalog['price']) ?></h3>
-                </header>
+                </hgroup>
                 <a class="flex-center margin-auto" href="index.php?p=cap_description&product_id=<?php echo htmlspecialchars($capCatalog['product_id']) ?>"><i class="fa-solid fa-hand-pointer"></i></a>
             <?php endforeach; ?>
         </article>
