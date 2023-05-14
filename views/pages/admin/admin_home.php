@@ -1,5 +1,6 @@
 <?php
     session_start(); 
+    $this->sessionCookie(); 
     $_SESSION = array(); 
     session_destroy();
 ?>
