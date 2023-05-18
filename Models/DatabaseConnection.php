@@ -4,12 +4,12 @@ namespace Models;
 
 class DatabaseConnection
 {
-	private $host = "retromania";
+	private $host = "retromania.com";
 	private $port = "3306";
 	private $dbname = "retro_mania";
 	private $charset = "utf8mb4";
 	private $username = "root";
-	private $password = "16.miRO47.7r";
+	private $password = "XXXXXXXX";
 	private $dbCon;
 	private $timeZone;
 	private $errDate;
