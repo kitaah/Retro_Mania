@@ -1,5 +1,6 @@
 const cacheName = 'my-page-cache-v1';
 
+// Resources to be cached
 const resourcesToCache = [
     '/',
     '/index.php',
